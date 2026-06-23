@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Beef, CalendarDays, HeartHandshake, Play, ShieldCheck, Stethoscope, UserRound, UsersRound } from "lucide-react";
+import { Award, Dumbbell, HandHeart, Leaf, Play, Tags, WheatOff } from "lucide-react";
 import { MotionReveal } from "@/components/motion-reveal";
 import { OrganicImage } from "@/components/organic-image";
 import { SectionHeading } from "@/components/section-heading";
@@ -20,14 +20,36 @@ const galleryImages = [
 ];
 
 const apart = [
-  { title: "All Natural, No Chemical", text: "Pure ingredients straight from nature - no artificial additives or preservatives.", icon: Beef },
-  { title: "Handmade by Farmers", text: "Crafted using traditional methods by skilled artisans for authentic quality.", icon: HeartHandshake },
-  { title: "Uplifting Farmers", text: "Supporting rural communities through fair-trade partnerships.", icon: UserRound },
-  { title: "100% Vegetarian", text: "Vegetarian nutritional chew for healthier pets.", icon: ShieldCheck },
-  { title: "Low Lactose Gluten Free", text: "Perfect for easy digestion and happy pups.", icon: UsersRound },
-  { title: "High Protein & Low Fat", text: "Supports muscle health without unnecessary calories.", icon: Beef },
-  { title: "Long Lasting", text: "Saves you money with chews that outlast regular treats.", icon: CalendarDays },
-  { title: "No Grain", text: "Ideal for grain-free diets and allergy-prone pups.", icon: Stethoscope },
+  {
+    title: "100% Natural",
+    text: "Made from simple, natural ingredients with no artificial additives, preservatives, or chemicals.",
+    icon: Leaf,
+  },
+  {
+    title: "Premium Quality",
+    text: "Crafted in Nepal using traditional methods and high-quality milk to ensure superior taste, safety, and consistency.",
+    icon: Award,
+  },
+  {
+    title: "High Protein",
+    text: "Naturally rich in protein to support strong muscles, healthy teeth, and overall well-being.",
+    icon: Dumbbell,
+  },
+  {
+    title: "Supporting Farming Communities",
+    text: "We work closely with local dairy farmers, ensuring fair trade, better livelihoods, and a stronger rural economy.",
+    icon: HandHeart,
+  },
+  {
+    title: "Private Label",
+    text: "Custom branding and packaging solutions tailored for your business. Build your brand with our trusted quality.",
+    icon: Tags,
+  },
+  {
+    title: "Gluten Free",
+    text: "Naturally gluten free, making it a safe and healthy chew for dogs with sensitivities.",
+    icon: WheatOff,
+  },
 ];
 
 export default function HomePage() {
@@ -106,14 +128,29 @@ export default function HomePage() {
 
       <section className="py-20">
         <SectionHeading title="What sets us apart" />
-        <div className="container mt-10 grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {apart.map((item) => (
-            <div key={item.title} className="paw-bg min-h-[220px] rounded-xl bg-[#f8f3ee] px-7 py-8 text-center">
-              <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white text-primary shadow-[0_10px_28px_rgba(0,0,0,.08)]">
+        <div className="container mt-10 grid max-w-4xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {apart.map((item, index) => (
+            <div
+              key={item.title}
+              className={
+                index === 1
+                  ? "paw-bg min-h-[226px] rounded-xl bg-primary px-8 py-8 text-center text-white shadow-[0_16px_34px_rgba(255,91,46,0.22)]"
+                  : "paw-bg min-h-[226px] rounded-xl bg-[#f8f3ee] px-8 py-8 text-center text-[#282828]"
+              }
+            >
+              <span
+                className={
+                  index === 1
+                    ? "mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white text-[#285a34] shadow-[0_10px_28px_rgba(0,0,0,.08)]"
+                    : "mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white text-primary shadow-[0_10px_28px_rgba(0,0,0,.08)]"
+                }
+              >
                 <item.icon className="h-8 w-8" />
               </span>
               <h3 className="mt-6 text-xl font-black leading-tight">{item.title}</h3>
-              <p className="mt-5 text-[12px] leading-6">{item.text}</p>
+              <p className={index === 1 ? "mt-5 text-[12px] font-semibold leading-6 text-white" : "mt-5 text-[12px] font-medium leading-6 text-[#333]"}>
+                {item.text}
+              </p>
             </div>
           ))}
         </div>
