@@ -21,7 +21,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/95 shadow-[0_3px_20px_rgba(0,0,0,0.08)] backdrop-blur-xl">
       <nav className="container relative flex h-[76px] max-w-5xl items-center justify-center" aria-label="Main navigation">
         <Link href="/" className="absolute left-4 top-1/2 -translate-y-1/2 lg:left-0" aria-label="White Himalayan Dog Chew home">
-          <Image src="/logo.svg" alt="White Himalayan Dog Chew logo" width={78} height={66} priority className="h-16 w-auto" />
+          <Image src="/logo.svg" alt="White Himalayan Dog Chew logo" width={98} height={83} priority className="h-16 w-auto" />
         </Link>
 
         <div className="hidden items-center gap-12 pl-48 lg:flex">

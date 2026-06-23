@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Facebook, Instagram, Mail, MapPin, Phone, Twitter } from "lucide-react";
 
 const instagramUrl = "https://www.instagram.com/white_himalayan?igsh=MWJsMHV4eTZuMXJzMg%3D%3D";
+const facebookUrl = "https://www.facebook.com/share/19Hf9BmujK/?mibextid=wwXIfr";
 
 export function Footer() {
   return (
@@ -46,7 +47,16 @@ export function Footer() {
             >
               <Instagram className="h-3 w-3" />
             </Link>
-            {[Facebook, Twitter, Mail].map((Icon, index) => (
+            <Link
+                href={facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit White Himalayan on Facebook"
+                className="flex h-6 w-6 items-center justify-center rounded-full bg-black"
+            >
+              <Facebook className="h-3 w-3" />
+            </Link>
+            {[ Twitter, Mail].map((Icon, index) => (
               <span key={index} className="flex h-6 w-6 items-center justify-center rounded-full bg-black">
                 <Icon className="h-3 w-3" />
               </span>

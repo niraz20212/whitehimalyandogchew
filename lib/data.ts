@@ -140,42 +140,53 @@ export const products = [
 
 export const processSteps = [
   {
-    title: "Hand-Milking Grass-Fed Yaks & Cows",
-    text: "Our process begins with free-roaming cattle that graze on natural pastures and forest leaves. Each morning, local herders milk them by hand to keep the milk fresh and carefully handled.",
+    title: "Milk Collection & Quality Testing",
+    text: "Fresh yak or cow milk is collected, filtered, and tested for quality.",
     icon: Milk,
     image: "https://images.unsplash.com/photo-1523294587484-bae6cc870010?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Traditional Milk Processing",
-    text: "The fresh milk undergoes a meticulous 4-5 hour boiling process before being spun in hand-cranked centrifuges to form the clean base for our chews.",
+    title: "Heating & Pasteurization",
+    text: "The milk is heated and pasteurized to ensure safety.",
     icon: Mountain,
     image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Natural Coagulation & Straining",
-    text: "A precise blend of Himalayan salt and lime juice gently separates the milk solids while maintaining balanced pH and mineral content.",
+    title: "Natural Curdling",
+    text: "Lime juice is added to curdle the milk and form curds.",
     icon: Sparkles,
     image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Artisanal Pressing & Shaping",
-    text: "The curds are wrapped in jute cloth and pressed using traditional weights. Artisans cut the dense texture into durable chew pieces.",
+    title: "Whey Separation & Draining",
+    text: "The curds are separated from the whey and drained thoroughly.",
     icon: PackageCheck,
     image: "https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Drying & Aging",
-    text: "The blocks are dried and smoke-cured for several months, developing their naturally firm texture while preserving nutritional integrity.",
+    title: "Pressing & Cheese Block Formation",
+    text: "The curds are pressed to remove moisture and shaped into cheese blocks.",
     icon: ShieldCheck,
     image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Rigorous Quality Inspection",
-    text: "Every piece is hand-inspected for consistency, purity, and structure before moving into packaging.",
+    title: "Cutting Into Chew Sizes",
+    text: "The cheese blocks are cut into the required chew sizes and shapes.",
     icon: CheckCircle2,
     image: "https://images.unsplash.com/photo-1581092335397-9fa3411086d4?auto=format&fit=crop&w=900&q=80",
   },
-  { title: "Packaging", text: "Finished chews are packed for freshness and easy gifting.", icon: Leaf },
+  {
+    title: "Smoke-Drying & Aging",
+    text: "The chews are smoke-dried and aged for several weeks to achieve their hard texture.",
+    icon: ShieldCheck,
+    image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    title: "Inspection, Grading & Packaging",
+    text: "The finished chews are inspected, graded, and packaged for sale.",
+    icon: Leaf,
+    image: "https://images.unsplash.com/photo-1581092335397-9fa3411086d4?auto=format&fit=crop&w=900&q=80",
+  },
 ];
 
 export const testimonials = [

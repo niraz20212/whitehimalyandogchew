@@ -7,9 +7,9 @@ import { SectionHeading } from "@/components/section-heading";
 import { Button } from "@/components/ui/button";
 import { site } from "@/lib/data";
 
-const heroImage = "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1400&q=85";
+const heroImage = "/hero-image.jpg";
 const videoImage = "https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?auto=format&fit=crop&w=1300&q=85";
-const storyImage = "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=1300&q=85";
+const storyImage = "/kukur1.jpg";
 const bannerImage = "https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=900&q=85";
 const instagramUrl = "https://www.instagram.com/white_himalayan?igsh=MWJsMHV4eTZuMXJzMg%3D%3D";
 const galleryImages = [
@@ -86,13 +86,25 @@ export default function HomePage() {
           </MotionReveal>
 
           <MotionReveal delay={0.12}>
-            <div className="relative h-[440px] md:h-[520px]">
-              <span className="absolute left-14 top-36 h-24 w-16 rounded-full bg-primary" aria-hidden />
-              <span className="absolute bottom-4 right-20 h-16 w-24 rotate-12 rounded-full bg-[#ffbd3e]" aria-hidden />
-              <span className="absolute bottom-0 left-48 h-36 w-72 -rotate-12 rounded-[50%] bg-[#0793a7]" aria-hidden />
-              <div className="image-blob absolute inset-0 overflow-hidden">
-                <Image src={heroImage} alt="Dog enjoying a Himalayan chew" fill priority sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" />
+            <div className="relative w-full aspect-[4/3] md:aspect-[16/10] lg:aspect-[16/9]">
+
+              {/* Decorative elements (optional keep/remove) */}
+              <span className="absolute left-14 top-36 h-24 w-16 rounded-full bg-primary" />
+              <span className="absolute bottom-4 right-20 h-16 w-24 rotate-12 rounded-full bg-[#ffbd3e]" />
+              <span className="absolute bottom-0 left-48 h-36 w-72 -rotate-12 rounded-[50%] bg-[#0793a7]" />
+
+              {/* IMAGE FRAME */}
+              <div className="relative w-full aspect-[3/4] max-h-[420px] md:max-h-[585px]">
+                <div className="absolute inset-0 overflow-hidden rounded-xl border-2 md:border-4 lg:border-8 border-white/20">
+                  <Image
+                      src={heroImage}
+                      alt="Dog enjoying a Himalayan chew"
+                      fill
+                      className="object-cover object-center"
+                  />
+                </div>
               </div>
+
             </div>
           </MotionReveal>
         </div>
@@ -110,10 +122,14 @@ export default function HomePage() {
       {/*</section>*/}
 
       <section className="relative overflow-hidden py-20">
-        <div className="absolute left-[14%] top-6 h-48 w-72 dash-arc" aria-hidden />
+        <div className="" aria-hidden />
         <div className="container grid max-w-6xl gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <MotionReveal>
-            <OrganicImage src={storyImage} alt="Small dog being offered a natural chew" className="h-[520px] w-full" />
+            <OrganicImage
+                src={storyImage}
+                alt="Small dog being offered a natural chew"
+                className="h-[520px] w-full border-0 outline-none ring-0 shadow-none"
+            />
           </MotionReveal>
           <MotionReveal delay={0.1}>
             <p className="text-xs font-black uppercase tracking-[0.35em] text-primary">About White Himalayan Dog Chew</p>

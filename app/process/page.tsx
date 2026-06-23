@@ -4,7 +4,7 @@ import { processSteps } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Process",
-  description: "See the seven-step process behind our premium Himalayan yak chews.",
+  description: "See the eight-step process behind our premium Himalayan yak chews.",
 };
 
 export default function ProcessPage() {
@@ -15,15 +15,15 @@ export default function ProcessPage() {
         <div className="mx-auto max-w-xl text-center">
           <p className="text-[10px] font-black uppercase tracking-[0.35em] text-primary">Our Process</p>
           <h1 className="mt-3 text-3xl font-black leading-tight">
-            The Artisanal Process Behind Our Himalayan Yak Chews
+            Step-by-Step Manufacturing Process
           </h1>
           <p className="mt-5 text-[13px] leading-6 text-[#333]">
-            We take pride in preserving centuries-old Himalayan traditions to create the purest, most nutritious dog chews. Every step blends traditional methods with modern safety standards.
+            We take pride in preserving Himalayan tradition while following a careful manufacturing process for safe, consistent, long-lasting dog chews.
           </p>
         </div>
 
         <div className="mx-auto mt-12 grid max-w-2xl gap-11">
-          {processSteps.slice(0, 6).map((step, index) => {
+          {processSteps.map((step, index) => {
             const image = "image" in step ? step.image : undefined;
             const imageBlock = (
               <div className="relative h-36 overflow-hidden rounded-xl">
