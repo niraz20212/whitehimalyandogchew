@@ -11,6 +11,7 @@ const heroImage = "https://images.unsplash.com/photo-1552053831-71594a27632d?aut
 const videoImage = "https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?auto=format&fit=crop&w=1300&q=85";
 const storyImage = "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=1300&q=85";
 const bannerImage = "https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=900&q=85";
+const instagramUrl = "https://www.instagram.com/white_himalayan?igsh=MWJsMHV4eTZuMXJzMg%3D%3D";
 const galleryImages = [
   "https://images.unsplash.com/photo-1523294587484-bae6cc870010?auto=format&fit=crop&w=900&q=80",
   "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=900&q=80",
@@ -129,28 +130,16 @@ export default function HomePage() {
       <section className="py-20">
         <SectionHeading title="What sets us apart" />
         <div className="container mt-10 grid max-w-4xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {apart.map((item, index) => (
+          {apart.map((item) => (
             <div
               key={item.title}
-              className={
-                index === 1
-                  ? "paw-bg min-h-[226px] rounded-xl bg-primary px-8 py-8 text-center text-white shadow-[0_16px_34px_rgba(255,91,46,0.22)]"
-                  : "paw-bg min-h-[226px] rounded-xl bg-[#f8f3ee] px-8 py-8 text-center text-[#282828]"
-              }
+              className="paw-bg min-h-[226px] rounded-xl bg-[#f8f3ee] px-8 py-8 text-center text-[#282828]"
             >
-              <span
-                className={
-                  index === 1
-                    ? "mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white text-[#285a34] shadow-[0_10px_28px_rgba(0,0,0,.08)]"
-                    : "mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white text-primary shadow-[0_10px_28px_rgba(0,0,0,.08)]"
-                }
-              >
+              <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white text-primary shadow-[0_10px_28px_rgba(0,0,0,.08)]">
                 <item.icon className="h-8 w-8" />
               </span>
               <h3 className="mt-6 text-xl font-black leading-tight">{item.title}</h3>
-              <p className={index === 1 ? "mt-5 text-[12px] font-semibold leading-6 text-white" : "mt-5 text-[12px] font-medium leading-6 text-[#333]"}>
-                {item.text}
-              </p>
+              <p className="mt-5 text-[12px] font-medium leading-6 text-[#333]">{item.text}</p>
             </div>
           ))}
         </div>
@@ -183,7 +172,9 @@ export default function HomePage() {
         </div>
         <div className="mt-6 text-center">
           <Button asChild size="sm" className="rounded-full px-8 text-[10px]">
-            <Link href="/process">View on Instagram</Link>
+            <Link href={instagramUrl} target="_blank" rel="noopener noreferrer">
+              View on Instagram
+            </Link>
           </Button>
         </div>
       </section>

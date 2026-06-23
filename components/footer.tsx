@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Facebook, Instagram, Mail, MapPin, Phone, Twitter } from "lucide-react";
 
+const instagramUrl = "https://www.instagram.com/white_himalayan?igsh=MWJsMHV4eTZuMXJzMg%3D%3D";
+
 export function Footer() {
   return (
     <footer className="relative overflow-hidden bg-[#294f78] text-white">
@@ -35,7 +37,16 @@ export function Footer() {
             Premium Himalayan dog chews using centuries-old traditions and modern quality standards. We deliver natural, long-lasting nutrition that keeps tails wagging.
           </p>
           <div className="mt-5 flex gap-3">
-            {[Instagram, Facebook, Twitter, Mail].map((Icon, index) => (
+            <Link
+              href={instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit White Himalayan on Instagram"
+              className="flex h-6 w-6 items-center justify-center rounded-full bg-black"
+            >
+              <Instagram className="h-3 w-3" />
+            </Link>
+            {[Facebook, Twitter, Mail].map((Icon, index) => (
               <span key={index} className="flex h-6 w-6 items-center justify-center rounded-full bg-black">
                 <Icon className="h-3 w-3" />
               </span>
