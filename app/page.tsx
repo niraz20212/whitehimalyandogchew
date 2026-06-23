@@ -54,10 +54,10 @@ export default function HomePage() {
           <MotionReveal>
             <div>
               <h1 className="max-w-[420px] text-[44px] font-black leading-[1.18] tracking-normal text-[#242424] sm:text-[56px]">
-                Premium Churpi for Healthy, Happy Pups
+                Authentic Himalayan Dog Chews
               </h1>
               <p className="mt-7 max-w-[430px] text-[18px] leading-9 text-[#2f2f2f]">
-                100% chemical-free, natural, handcrafted Yak Churpi for healthier, happier dogs sustainably made by Nepalese artisans. At Mountain Pet Company, we believe your dog deserves chews that are as pure as they are.
+                Crafted in the heart of the Himalayas, White Himalayan Dog Chews are made from yak and cow milk using generations of expertise, creating a 100% natural, protein-rich, and long-lasting chew trusted by pet owners and loved by dogs worldwide.
               </p>
             </div>
           </MotionReveal>
@@ -75,16 +75,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-24">
-        <div className="container max-w-4xl">
-          <div className="relative mx-auto aspect-video max-w-[880px] overflow-hidden bg-black">
-            <Image src={videoImage} alt="Dog chewing churpi" fill sizes="900px" className="object-cover opacity-75" />
-            <button className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-[3px] border-white text-white" aria-label="Play video">
-              <Play className="h-7 w-7 fill-current" />
-            </button>
-          </div>
-        </div>
-      </section>
+      {/*<section className="py-24">*/}
+      {/*  <div className="container max-w-4xl">*/}
+      {/*    <div className="relative mx-auto aspect-video max-w-[880px] overflow-hidden bg-black">*/}
+      {/*      <Image src={videoImage} alt="Dog chewing churpi" fill sizes="900px" className="object-cover opacity-75" />*/}
+      {/*      <button className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-[3px] border-white text-white" aria-label="Play video">*/}
+      {/*        <Play className="h-7 w-7 fill-current" />*/}
+      {/*      </button>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
 
       <section className="relative overflow-hidden py-20">
         <div className="absolute left-[14%] top-6 h-48 w-72 dash-arc" aria-hidden />
@@ -93,10 +93,9 @@ export default function HomePage() {
             <OrganicImage src={storyImage} alt="Small dog being offered a natural chew" className="h-[520px] w-full" />
           </MotionReveal>
           <MotionReveal delay={0.1}>
-            <p className="text-xs font-black uppercase tracking-[0.35em] text-primary">About Mountain Pet Company</p>
-            <h2 className="mt-5 max-w-sm text-4xl font-black leading-tight">Born from Love, for our fur buddies</h2>
+            <p className="text-xs font-black uppercase tracking-[0.35em] text-primary">About White Himalayan Dog Chew</p>
             <p className="mt-7 max-w-md text-base leading-8">
-              At The Mountain Pet Company, we partner directly with Himalayan farmers to bring you the purest yak churpi. Each chew supports rural Nepalese communities while giving your dog a protein-rich, lactose-friendly treat.
+              White Himalayan Dog Chew is a premium, all-natural dog chew crafted in Himalayas of Nepal using traditional Himalayan cheesemaking techniques passed down through generations. Made from pure, high-quality milk with no artificial additives or preservatives, it offers a safe and nutritious chewing experience for dogs. It is naturally rich in protein and highly durable supporting dental health. Each chew is carefully crafted and slowly dried to ensure long-lasting enjoyment. Rooted in Himalayan heritage, our product reflects authenticity, purity, and craftsmanship in every piece. Loved by dogs worldwide, it is a healthy and satisfying natural treat.
             </p>
             <Button asChild className="mt-8 rounded-full px-9">
               <Link href="/about">Read More</Link>
