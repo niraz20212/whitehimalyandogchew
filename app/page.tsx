@@ -6,6 +6,7 @@ import { OrganicImage } from "@/components/organic-image";
 import { SectionHeading } from "@/components/section-heading";
 import { Button } from "@/components/ui/button";
 import { site } from "@/lib/data";
+import { DollarSign } from "lucide-react";
 
 const heroImage = "/hero-image.jpg";
 const setApartBelowImages="/sectioningredients.jpg"
@@ -48,9 +49,9 @@ const apart = [
     icon: Tags,
   },
   {
-    title: "Gluten Free",
-    text: "Naturally gluten free, making it a safe and healthy chew for dogs with sensitivities.",
-    icon: WheatOff,
+    title: "Attractive Wholesale Pricing",
+    text: "Enjoy manufacturer-direct pricing that delivers premium quality and strong profit margins for your business.",
+    icon: DollarSign,
   },
 ];
 
@@ -77,8 +78,8 @@ export default function HomePage() {
         <div className="container relative grid min-h-[610px] max-w-5xl items-center gap-10 py-10 lg:grid-cols-[0.8fr_1.2fr]">
           <MotionReveal>
             <div>
-              <h1 className="max-w-[420px] text-[44px] font-black leading-[1.18] tracking-normal text-[#242424] sm:text-[56px]">
-                Authentic Himalayan Dog Chews
+              <h1 className="max-w-[420px] text-[26px] font-black leading-[1.18] tracking-normal text-[#242424] sm:text-[34px]">
+                Authentic Yak Chew Manufacturer and Global Wholesale Supplier from the Himalayas
               </h1>
               <p className="mt-7 max-w-[430px] text-[22px] leading-9 text-[#2f2f2f]">
                 Crafted in the heart of the Himalayas, White Himalayan Dog Chews are made from yak and cow milk using generations of expertise, creating a 100% natural, protein-rich, and long-lasting chew trusted by pet owners and loved by dogs worldwide.

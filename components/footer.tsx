@@ -16,7 +16,7 @@ export function Footer() {
               <MapPin className="h-3 w-3 text-primary" /> Birtamode-5,Jhapa,Nepal
             </p>
             <p className="flex items-center gap-2">
-              <Phone className="h-3 w-3 text-primary" /> +977 9826152030
+              <Phone className="h-3 w-3 text-primary" /> +977 9826152030 , +977 9761819050
             </p>
             <p className="flex items-center gap-2">
               <Mail className="h-3 w-3 text-primary" /> whitehimalayan4@gmail.com
@@ -57,11 +57,16 @@ export function Footer() {
             >
               <Facebook className="h-3 w-3" />
             </Link>
-            {[ Twitter, Mail].map((Icon, index) => (
-              <span key={index} className="flex h-6 w-6 items-center justify-center rounded-full bg-black">
-                <Icon className="h-3 w-3" />
-              </span>
-            ))}
+            <Link
+                href="mailto:whitehimalayan4@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Email White Himalayan"
+                className="flex h-6 w-6 items-center justify-center rounded-full bg-black"
+            >
+              <Mail className="h-3 w-3 text-white" />
+            </Link>
+
           </div>
         </div>
       </div>

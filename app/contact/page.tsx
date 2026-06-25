@@ -16,11 +16,9 @@ export default function ContactPage() {
       <div className="container relative">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#a5794d]">Contact</p>
-          <h1 className="mt-4 text-4xl font-bold tracking-normal text-[#3d2919] sm:text-5xl">
-            Questions about Himalayan dog chews?
-          </h1>
+
           <p className="mt-4 text-base leading-7 text-[#765d45] sm:text-lg">
-            Send us your inquiry and our team will help with sizing, wholesale orders, product details, and sourcing.
+            Get in touch with our team for wholesale, export, and private label solutions.
           </p>
         </div>
 
@@ -48,7 +46,7 @@ export default function ContactPage() {
                   label="Email"
                   value="whitehimalayandogchew@gmail.com"
                 />
-                <ContactDetail icon={<Phone className="h-5 w-5" aria-hidden="true" />} label="Phone" value="+977 9826152030" />
+                <ContactDetail icon={<Phone className="h-5 w-5" aria-hidden="true" />} label="Phone" value="+977 9826152030,+977 9761819050" />
                 <ContactDetail
                   icon={<MapPin className="h-5 w-5" aria-hidden="true" />}
                   label="Location"
@@ -58,21 +56,8 @@ export default function ContactPage() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-              <InfoCard
-                icon={<Clock className="h-5 w-5" aria-hidden="true" />}
-                title="Quick replies"
-                text="Most inquiries are reviewed within one business day."
-              />
-              <InfoCard
-                icon={<Truck className="h-5 w-5" aria-hidden="true" />}
-                title="Wholesale ready"
-                text="Ask about bulk sizing, packaging, and export options."
-              />
-              <InfoCard
-                icon={<ShieldCheck className="h-5 w-5" aria-hidden="true" />}
-                title="Natural sourcing"
-                text="Learn more about ingredients, aging, and chew selection."
-              />
+
+
             </div>
           </aside>
         </div>

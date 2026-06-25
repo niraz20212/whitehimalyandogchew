@@ -127,16 +127,7 @@ export function ContactForm() {
       noValidate
     >
       <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#d8b98f] via-[#f0dcc1] to-[#fff4e6]" />
-      <div className="mb-7 flex items-start gap-4">
-        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-[#ead8c2] bg-[#fbf0e2] text-[#8a643e] shadow-sm transition duration-300 group-hover:scale-105">
-          <MessageSquareText className="h-5 w-5" aria-hidden="true" />
-        </span>
-        <div>
-          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#b48657]">Send a message</p>
-          <h2 className="mt-1 text-2xl font-semibold tracking-normal text-[#3f2a1a]">Tell us what your dog needs</h2>
-          <p className="mt-2 text-sm leading-6 text-[#80664c]">We will help with sizing, wholesale orders, shipping, and sourcing details.</p>
-        </div>
-      </div>
+
 
       <div className="grid gap-5 sm:grid-cols-2">
         <FormField error={errors.name} icon={<User className="h-4 w-4" aria-hidden="true" />} id="name" label="Name">
@@ -184,7 +175,6 @@ export function ContactForm() {
             id="phone"
             name="phone"
             onChange={updateField("phone")}
-            placeholder="+977 9800000000"
             required
             type="tel"
             value={values.phone}
@@ -217,7 +207,7 @@ export function ContactForm() {
             id="message"
             name="message"
             onChange={updateField("message")}
-            placeholder="Tell us what you need help with."
+            placeholder="Enter you message here..."
             required
             value={values.message}
           />

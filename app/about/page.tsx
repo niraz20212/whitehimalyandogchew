@@ -27,16 +27,17 @@ export default function AboutPage() {
             </h1>
             <div className="mt-7 space-y-5 text-base leading-8 text-[#303030]">
               <p className="text-2xl leading-9">
-                At The Mountain Pet Company, we believe dogs deserve better nutrition, better ingredients, and better care. Every chew is made to be as wholesome as nature intended.
+                White Himalayan Dog Chew was born from over 32 years of expertise in crafting traditional Himalayan chhurpi in Ilam, Nepal. Rooted in generations of dairy craftsmanship, our journey began with a deep respect for natural methods and the cultural heritage of the Himalayas. Over time, this traditional knowledge evolved into a vision to create premium, natural dog chews that reflect authenticity, purity, and quality.
               </p>
 
               <p className="text-2xl leading-9">
-                We partner directly with Nepalese herders and farmers to create natural, protein-rich yak churpi from free-range, grass-fed animals. The result is a simple, durable chew with a clear origin and a purpose behind it.
+                With our own production centers and modern processing facility in Jhapa, Nepal, we proudly bring authentic, manufacturer-direct Himalayan dog chews to the global market. Every step of production is carefully controlled from sourcing fresh, high-quality yak and cow milk from local dairy communities to shaping each chew using time-honored techniques combined with strict hygiene standards.
               </p>
 
               <p className="text-2xl leading-9">
-                Each product is carefully prepared in Kathmandu, where generations of artisanal knowledge meet strict quality testing and modern food safety standards.
+                Each chew represents the rich culture of the Himalayas, the dedication of local farmers and dairy communities, and our commitment to sustainable craftsmanship. Driven by a vision to share Nepal's finest natural dog chew with pet owners worldwide, we continue to deliver a product that dogs love and owners trust, built on authenticity, tradition, and uncompromising quality.
               </p>
+
             </div>
           </div>
 
