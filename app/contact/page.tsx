@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Mail, MapPin, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { SectionHeading } from "@/components/section-heading";
+import type { ReactNode } from "react";
+import Image from "next/image";
+import { Clock, Mail, MapPin, Phone, ShieldCheck, Truck } from "lucide-react";
+import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -11,58 +11,98 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="container py-14 sm:py-20">
-      <SectionHeading
-        eyebrow="Contact"
-        title="Questions about sizing, wholesale, or sourcing?"
-        text="Send a note and our team will help you find the right next step."
-      />
-      <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_0.8fr]">
-        <form className="grid gap-4 rounded-lg border border-border bg-card p-5 sm:p-6">
-          <div className="grid gap-4 sm:grid-cols-2">
-            <Input placeholder="First name" aria-label="First name" />
-            <Input placeholder="Last name" aria-label="Last name" />
-          </div>
-          <Input type="email" placeholder="Email address" aria-label="Email address" />
-          <Input placeholder="Subject" aria-label="Subject" />
-          <textarea
-            className="min-h-36 rounded-lg border border-input bg-background p-4 text-sm outline-none placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring"
-            placeholder="How can we help?"
-            aria-label="Message"
-          />
-          <Button type="submit" className="sm:w-fit">
-            Send Message
-          </Button>
-        </form>
-        <div className="space-y-5">
-          <div className="rounded-lg border border-border bg-card p-5">
-            <h2 className="text-xl font-semibold">Business Information</h2>
-            <div className="mt-5 grid gap-4 text-sm text-muted-foreground">
-              <p className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-primary" />
-               whitehimalayandogchew.com
-              </p>
-              <p className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-primary" />
-                +977 9826152030
-              </p>
-              <p className="flex items-center gap-3">
-                <MapPin className="h-5 w-5 text-primary" />
-                Birtamode-5,Jhapa,Nepal
-              </p>
+    <section className="relative overflow-hidden bg-[#f8efe4] py-14 sm:py-20">
+      <div className="absolute inset-0 bone-bg opacity-[0.06]" aria-hidden="true" />
+      <div className="container relative">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#a5794d]">Contact</p>
+          <h1 className="mt-4 text-4xl font-bold tracking-normal text-[#3d2919] sm:text-5xl">
+            Questions about Himalayan dog chews?
+          </h1>
+          <p className="mt-4 text-base leading-7 text-[#765d45] sm:text-lg">
+            Send us your inquiry and our team will help with sizing, wholesale orders, product details, and sourcing.
+          </p>
+        </div>
+
+        <div className="mt-11 grid gap-7 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.72fr)] lg:items-start">
+          <ContactForm />
+          <aside className="grid gap-5">
+            <div className="overflow-hidden rounded-lg border border-[#e5d7c4] bg-white shadow-[0_24px_70px_rgba(93,61,33,0.1)]">
+              <div className="relative h-48">
+                <Image
+                  src="/churpi.jpg"
+                  alt="Natural Himalayan dog chews"
+                  fill
+                  sizes="(min-width: 1024px) 420px, 100vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#3d2919]/55 to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4">
+                  <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#f8dfbd]">Premium support</p>
+                  <h2 className="mt-1 text-2xl font-semibold tracking-normal text-white">We are here for every chew question.</h2>
+                </div>
+              </div>
+              <div className="grid gap-3 p-5">
+                <ContactDetail
+                  icon={<Mail className="h-5 w-5" aria-hidden="true" />}
+                  label="Email"
+                  value="whitehimalayandogchew@gmail.com"
+                />
+                <ContactDetail icon={<Phone className="h-5 w-5" aria-hidden="true" />} label="Phone" value="+977 9826152030" />
+                <ContactDetail
+                  icon={<MapPin className="h-5 w-5" aria-hidden="true" />}
+                  label="Location"
+                  value="Birtamode-5, Jhapa, Nepal"
+                />
+              </div>
             </div>
-          </div>
-          {/*<div className="overflow-hidden rounded-lg border border-border bg-card">*/}
-          {/*  <iframe*/}
-          {/*    title="Google map showing Denver, Colorado"*/}
-          {/*    src="https://www.google.com/maps?q=Denver%20Colorado&output=embed"*/}
-          {/*    className="h-72 w-full"*/}
-          {/*    loading="lazy"*/}
-          {/*    referrerPolicy="no-referrer-when-downgrade"*/}
-          {/*  />*/}
-          {/*</div>*/}
+
+            <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+              <InfoCard
+                icon={<Clock className="h-5 w-5" aria-hidden="true" />}
+                title="Quick replies"
+                text="Most inquiries are reviewed within one business day."
+              />
+              <InfoCard
+                icon={<Truck className="h-5 w-5" aria-hidden="true" />}
+                title="Wholesale ready"
+                text="Ask about bulk sizing, packaging, and export options."
+              />
+              <InfoCard
+                icon={<ShieldCheck className="h-5 w-5" aria-hidden="true" />}
+                title="Natural sourcing"
+                text="Learn more about ingredients, aging, and chew selection."
+              />
+            </div>
+          </aside>
         </div>
       </div>
     </section>
+  );
+}
+
+function ContactDetail({ icon, label, value }: { icon: ReactNode; label: string; value: string }) {
+  return (
+    <div className="flex items-start gap-3 border-b border-[#efe4d6] pb-4 last:border-b-0 last:pb-0">
+      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#f1dfc8] text-[#93683f]">{icon}</span>
+      <div>
+        <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#a5794d]">{label}</p>
+        <p className="mt-1 text-sm font-medium leading-6 text-[#4c3320]">{value}</p>
+      </div>
+    </div>
+  );
+}
+
+function InfoCard({ icon, text, title }: { icon: ReactNode; text: string; title: string }) {
+  return (
+    <div className="rounded-lg border border-[#e5d7c4] bg-white/85 p-4 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-md">
+      <div className="flex items-start gap-3">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#f4e6d4] text-[#93683f]">{icon}</span>
+        <div>
+          <h3 className="font-semibold text-[#3f2a1a]">{title}</h3>
+          <p className="mt-1 text-sm leading-6 text-[#765d45]">{text}</p>
+        </div>
+      </div>
+    </div>
   );
 }

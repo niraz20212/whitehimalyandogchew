@@ -37,6 +37,7 @@ export const products = [
   {
     slug: "waffles",
     name: "Medium",
+    category: "Waffle",
     size: "70 g",
     badge: "Waffle",
     image: medium,
@@ -47,6 +48,7 @@ export const products = [
   {
     slug: "small-yak-chew",
     name: "Large",
+    category: "Churpi",
     size: "100 g",
     badge: "Churpi",
     image: large,
@@ -57,6 +59,7 @@ export const products = [
   {
     slug: "medium-yak-chew",
     name: "XL",
+    category: "Churpi",
     size: "140 g",
     badge: "Churpi",
     image: xl,
@@ -67,6 +70,7 @@ export const products = [
   {
     slug: "large-yak-chew",
     name: "XXL",
+    category: "Churpi",
     size: "170 g",
     badge: "Churpi",
     image: big,
@@ -89,6 +93,7 @@ export const products = [
     slug: "xxl-yak-chew",
     name: "Yak Cheese Puff",
     category: "Churpi",
+    size: "35 g",
     badge: "Churpi",
     image: cheeseImage,
     description: "Oversized churpi for powerful chewers and longer sessions.",

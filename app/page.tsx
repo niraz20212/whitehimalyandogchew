@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { site } from "@/lib/data";
 
 const heroImage = "/hero-image.jpg";
+const setApartBelowImages="/sectioningredients.jpg"
 const videoImage = "https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?auto=format&fit=crop&w=1300&q=85";
 const storyImage = "/kukur1.jpg";
 const bannerImage = "https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=900&q=85";
@@ -79,7 +80,7 @@ export default function HomePage() {
               <h1 className="max-w-[420px] text-[44px] font-black leading-[1.18] tracking-normal text-[#242424] sm:text-[56px]">
                 Authentic Himalayan Dog Chews
               </h1>
-              <p className="mt-7 max-w-[430px] text-[18px] leading-9 text-[#2f2f2f]">
+              <p className="mt-7 max-w-[430px] text-[22px] leading-9 text-[#2f2f2f]">
                 Crafted in the heart of the Himalayas, White Himalayan Dog Chews are made from yak and cow milk using generations of expertise, creating a 100% natural, protein-rich, and long-lasting chew trusted by pet owners and loved by dogs worldwide.
               </p>
             </div>
@@ -122,34 +123,58 @@ export default function HomePage() {
       {/*</section>*/}
 
       <section className="relative overflow-hidden py-20">
-        <div className="" aria-hidden />
-        <div className="container grid max-w-6xl gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+        <div className="container max-w-7xl px-6 grid gap-16 lg:grid-cols-2 lg:items-center">
           <MotionReveal>
-
             <Image
                 src={storyImage}
                 alt="Small dog being offered a natural chew"
                 width={800}
                 height={600}
-                className="w-full h-auto"
+                className="w-full h-auto rounded-2xl"
             />
           </MotionReveal>
+
           <MotionReveal delay={0.1}>
-            <p className="text-lg font-black uppercase tracking-[0.25em] text-primary">
+            <p className="text-2xl font-black uppercase tracking-[0.25em] text-primary">
               About White Himalayan Dog Chew
             </p>
-            <p className="mt-7 max-w-md text-base leading-8">
-              White Himalayan Dog Chew is a premium, all-natural dog chew crafted in Himalayas of Nepal using traditional Himalayan cheesemaking techniques passed down through generations. Made from pure, high-quality milk with no artificial additives or preservatives, it offers a safe and nutritious chewing experience for dogs. It is naturally rich in protein and highly durable supporting dental health. Each chew is carefully crafted and slowly dried to ensure long-lasting enjoyment. Rooted in Himalayan heritage, our product reflects authenticity, purity, and craftsmanship in every piece. Loved by dogs worldwide, it is a healthy and satisfying natural treat.
+            <p className="mt-7 text-xl leading-10">
+              White Himalayan Dog Chew is a premium, all-natural dog chew crafted in
+              Himalayas of Nepal using traditional Himalayan cheesemaking techniques
+              passed down through generations. Made from pure, high-quality milk
+              with no artificial additives or preservatives, it offers a safe and
+              nutritious chewing experience for dogs. It is naturally rich in
+              protein and highly durable supporting dental health. Each chew is
+              carefully crafted and slowly dried to ensure long-lasting enjoyment.
+              Rooted in Himalayan heritage, our product reflects authenticity,
+              purity, and craftsmanship in every piece. Loved by dogs worldwide, it
+              is a healthy and satisfying natural treat.
             </p>
-            <Button asChild className="mt-8 rounded-full px-9">
+            <Button asChild className="mt-8 rounded-full px-9 text-lg">
               <Link href="/about">Read More</Link>
             </Button>
           </MotionReveal>
         </div>
       </section>
 
+
+
       <section className="py-20">
         <SectionHeading title="What sets us apart" />
+
+        {/* Rectangle Image */}
+        <div className="container mt-16 flex justify-center">
+          <div className="w-full max-w-5xl overflow-hidden rounded-2xl">
+            <Image
+                src={setApartBelowImages}
+                alt="What sets us apart"
+                width={1200}
+                height={500}
+                className="h-auto w-full object-contain"
+                priority
+            />
+          </div>
+        </div>
 
         <div className="container mt-10 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {apart.map((item) => (
@@ -157,9 +182,9 @@ export default function HomePage() {
                   key={item.title}
                   className="group min-h-[300px] rounded-xl bg-[#f8f3ee] px-8 py-10 text-center text-[#282828] transition-all duration-300 hover:-translate-y-1 hover:bg-[#6F4E37] hover:shadow-lg"
               >
-        <span className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-white text-primary shadow-[0_10px_28px_rgba(0,0,0,.08)] transition-all duration-300 group-hover:bg-[#8B5E3C] group-hover:text-white">
-          <item.icon className="h-10 w-10" />
-        </span>
+  <span className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-white text-primary shadow-[0_10px_28px_rgba(0,0,0,.08)] transition-all duration-300 group-hover:bg-[#8B5E3C] group-hover:text-white">
+    <item.icon className="h-10 w-10" />
+  </span>
 
                 <h3 className="mt-6 text-2xl font-black leading-tight transition-colors duration-300 group-hover:text-white">
                   {item.title}
@@ -186,6 +211,36 @@ export default function HomePage() {
           <Button asChild className="rounded-full px-9">
             <Link href="/products">View Products</Link>
           </Button>
+        </div>
+      </section>
+      <section className="container py-16">
+        <div className="mx-auto max-w-5xl text-center">
+          <h2 className="text-4xl font-black text-white">Our Company</h2>
+        </div>
+
+        <div className="mx-auto mt-12 grid max-w-5xl grid-cols-2 gap-6 sm:grid-cols-4">
+          {[
+            { name: "White Himalayan Dog Chew", logo: "/whitehimalayan.jpg" },
+            { name: "Green Hill Multitraders", logo: "gh.jpg" },
+            { name: "Mahalaxmi Dairy Udhyog", logo: "mt.jpg" },
+            { name: "ML Agri", logo: "ml.jpg" },
+          ].map((company, i) => (
+              <div
+                  key={i}
+                  className="group flex flex-col items-center justify-center rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition hover:-translate-y-2 hover:shadow-lg"
+              >
+                <div className="flex h-48 w-full items-center justify-center rounded-xl bg-gray-50 p-2">
+                  <img
+                      src={company.logo}
+                      alt={company.name}
+                      className="h-full w-auto max-w-full object-contain transition group-hover:scale-105"
+                  />
+                </div>
+                <p className="mt-4 text-center text-sm font-semibold text-gray-700">
+                  {company.name}
+                </p>
+              </div>
+          ))}
         </div>
       </section>
 

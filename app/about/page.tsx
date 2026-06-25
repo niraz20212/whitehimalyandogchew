@@ -19,32 +19,36 @@ export default function AboutPage() {
       <div className="border-b border-[#f1ebe5] bg-[#fbf8f5]">
         <div className="container grid max-w-6xl gap-10 py-16 lg:grid-cols-[1fr_0.9fr] lg:items-center">
           <div className="max-w-2xl">
-            <p className="text-xs font-black uppercase tracking-[0.3em] text-primary">Our Story</p>
+            <p className="text-3xl font-black uppercase tracking-[0.3em] text-primary">
+              Our Story
+            </p>
             <h1 className="mt-4 text-4xl font-black leading-tight text-[#202124] sm:text-5xl">
               Handmade & Organic Himalayan Chews
             </h1>
             <div className="mt-7 space-y-5 text-base leading-8 text-[#303030]">
-              <p>
+              <p className="text-2xl leading-9">
                 At The Mountain Pet Company, we believe dogs deserve better nutrition, better ingredients, and better care. Every chew is made to be as wholesome as nature intended.
               </p>
-              <p>
+
+              <p className="text-2xl leading-9">
                 We partner directly with Nepalese herders and farmers to create natural, protein-rich yak churpi from free-range, grass-fed animals. The result is a simple, durable chew with a clear origin and a purpose behind it.
               </p>
-              <p>
+
+              <p className="text-2xl leading-9">
                 Each product is carefully prepared in Kathmandu, where generations of artisanal knowledge meet strict quality testing and modern food safety standards.
               </p>
             </div>
           </div>
 
-          <div className="relative aspect-[9/16] w-full overflow-hidden rounded-xl bg-[#f1dfbd] shadow-[0_18px_50px_rgba(40,33,25,0.12)]">
-            <Image
-                src="/churpi.jpg"
-                alt="Rows of Himalayan yak chews"
-                fill
-                priority
-                sizes="(min-width:1024px) 45vw, 100vw"
-                className="object-cover object-top"
-            />
+          <div className="relative aspect-[9/16] w-full overflow-hidden rounded-xl bg-white shadow-[0_18px_50px_rgba(40,33,25,0.12)]">
+            <div className="relative aspect-[9/16] w-full overflow-hidden rounded-xl bg-white shadow-[0_18px_50px_rgba(40,33,25,0.12)]">
+              <Image
+                  src="/churpi.png"
+                  alt="Rows of Himalayan yak chews"
+                  fill
+                  className="object-cover object-center mix-blend-multiply"
+              />
+            </div>
           </div>
         </div>
       </div>
