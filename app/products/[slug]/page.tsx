@@ -54,7 +54,6 @@ export default async function ProductDetailPage({ params }: Props) {
         <Badge>{product.category}</Badge>
         <h1 className="mt-5 text-4xl font-semibold tracking-normal">{product.name}</h1>
         <p className="mt-3 text-lg text-muted-foreground">{product.size}</p>
-        <p className="mt-6 text-3xl font-semibold">${product.price.toFixed(2)}</p>
         <p className="mt-6 text-lg leading-8 text-muted-foreground">{product.description}</p>
         <div className="mt-8 grid gap-3">
           {highlights.map(({ text, icon: Icon }) => (

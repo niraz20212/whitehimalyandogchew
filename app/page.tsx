@@ -91,7 +91,7 @@ export default function HomePage() {
               {/* Decorative elements (optional keep/remove) */}
               <span className="absolute left-14 top-36 h-24 w-16 rounded-full bg-primary" />
               <span className="absolute bottom-4 right-20 h-16 w-24 rotate-12 rounded-full bg-[#ffbd3e]" />
-              <span className="absolute bottom-0 left-48 h-36 w-72 -rotate-12 rounded-[50%] bg-[#0793a7]" />
+              {/*<span className="absolute bottom-0 left-48 h-36 w-72 -rotate-12 rounded-[50%] bg-[#0793a7]" />*/}
 
               {/* IMAGE FRAME */}
               <div className="relative w-full aspect-[3/4] max-h-[420px] md:max-h-[585px]">
@@ -125,14 +125,19 @@ export default function HomePage() {
         <div className="" aria-hidden />
         <div className="container grid max-w-6xl gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <MotionReveal>
-            <OrganicImage
+
+            <Image
                 src={storyImage}
                 alt="Small dog being offered a natural chew"
-                className="h-[520px] w-full border-0 outline-none ring-0 shadow-none"
+                width={800}
+                height={600}
+                className="w-full h-auto"
             />
           </MotionReveal>
           <MotionReveal delay={0.1}>
-            <p className="text-xs font-black uppercase tracking-[0.35em] text-primary">About White Himalayan Dog Chew</p>
+            <p className="text-lg font-black uppercase tracking-[0.25em] text-primary">
+              About White Himalayan Dog Chew
+            </p>
             <p className="mt-7 max-w-md text-base leading-8">
               White Himalayan Dog Chew is a premium, all-natural dog chew crafted in Himalayas of Nepal using traditional Himalayan cheesemaking techniques passed down through generations. Made from pure, high-quality milk with no artificial additives or preservatives, it offers a safe and nutritious chewing experience for dogs. It is naturally rich in protein and highly durable supporting dental health. Each chew is carefully crafted and slowly dried to ensure long-lasting enjoyment. Rooted in Himalayan heritage, our product reflects authenticity, purity, and craftsmanship in every piece. Loved by dogs worldwide, it is a healthy and satisfying natural treat.
             </p>
@@ -145,18 +150,25 @@ export default function HomePage() {
 
       <section className="py-20">
         <SectionHeading title="What sets us apart" />
-        <div className="container mt-10 grid max-w-4xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+        <div className="container mt-10 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {apart.map((item) => (
-            <div
-              key={item.title}
-              className="paw-bg min-h-[226px] rounded-xl bg-[#f8f3ee] px-8 py-8 text-center text-[#282828]"
-            >
-              <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white text-primary shadow-[0_10px_28px_rgba(0,0,0,.08)]">
-                <item.icon className="h-8 w-8" />
-              </span>
-              <h3 className="mt-6 text-xl font-black leading-tight">{item.title}</h3>
-              <p className="mt-5 text-[12px] font-medium leading-6 text-[#333]">{item.text}</p>
-            </div>
+              <div
+                  key={item.title}
+                  className="group min-h-[300px] rounded-xl bg-[#f8f3ee] px-8 py-10 text-center text-[#282828] transition-all duration-300 hover:-translate-y-1 hover:bg-[#6F4E37] hover:shadow-lg"
+              >
+        <span className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-white text-primary shadow-[0_10px_28px_rgba(0,0,0,.08)] transition-all duration-300 group-hover:bg-[#8B5E3C] group-hover:text-white">
+          <item.icon className="h-10 w-10" />
+        </span>
+
+                <h3 className="mt-6 text-2xl font-black leading-tight transition-colors duration-300 group-hover:text-white">
+                  {item.title}
+                </h3>
+
+                <p className="mt-5 text-base font-medium leading-7 text-[#333] transition-colors duration-300 group-hover:text-white">
+                  {item.text}
+                </p>
+              </div>
           ))}
         </div>
       </section>
@@ -164,12 +176,12 @@ export default function HomePage() {
       <section className="container py-16">
         <div className="relative mx-auto grid max-w-4xl items-center gap-6 overflow-visible rounded-xl bg-[#294f78] px-8 py-9 text-white md:grid-cols-[1fr_1.2fr_auto]">
           <div>
-            <p className="text-xs font-black tracking-[0.2em]">Handmade with love</p>
+            {/*<p className="text-xs font-black tracking-[0.2em]">Handmade with love</p>*/}
             <h2 className="mt-3 text-4xl font-black leading-tight">Discover our products</h2>
           </div>
           <div className="relative hidden h-40 md:block">
-            <Image src={bannerImage} alt="Happy dogs product banner" fill sizes="40vw" className="object-contain object-bottom" />
-            <span className="absolute left-0 top-14 rounded-full bg-white px-5 py-4 text-xl font-black text-[#333]">Yummy</span>
+            {/*<Image src={bannerImage} alt="Happy dogs product banner" fill sizes="40vw" className="object-contain object-bottom" />*/}
+            {/*<span className="absolute left-0 top-14 rounded-full bg-white px-5 py-4 text-xl font-black text-[#333]">Yummy</span>*/}
           </div>
           <Button asChild className="rounded-full px-9">
             <Link href="/products">View Products</Link>
@@ -177,23 +189,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="grid gap-3 px-0 md:grid-cols-5">
-          {galleryImages.map((src, index) => (
-            <div key={src} className="relative aspect-[4/5] overflow-hidden rounded-md">
-              <Image src={src} alt={`Mountain Pet Company process ${index + 1}`} fill sizes="20vw" className="object-cover" />
-              {index === 1 ? <div className="absolute inset-0 flex items-center justify-center bg-primary/90 text-2xl text-white">+</div> : null}
-            </div>
-          ))}
-        </div>
-        <div className="mt-6 text-center">
-          <Button asChild size="sm" className="rounded-full px-8 text-[10px]">
-            <Link href={instagramUrl} target="_blank" rel="noopener noreferrer">
-              View on Instagram
-            </Link>
-          </Button>
-        </div>
-      </section>
+      {/*<section className="py-16">*/}
+      {/*  <div className="grid gap-3 px-0 md:grid-cols-5">*/}
+      {/*    {galleryImages.map((src, index) => (*/}
+      {/*      <div key={src} className="relative aspect-[4/5] overflow-hidden rounded-md">*/}
+      {/*        <Image src={src} alt={`Mountain Pet Company process ${index + 1}`} fill sizes="20vw" className="object-cover" />*/}
+      {/*        {index === 1 ? <div className="absolute inset-0 flex items-center justify-center bg-primary/90 text-2xl text-white">+</div> : null}*/}
+      {/*      </div>*/}
+      {/*    ))}*/}
+      {/*  </div>*/}
+      {/*  <div className="mt-6 text-center">*/}
+      {/*    <Button asChild size="sm" className="rounded-full px-8 text-[10px]">*/}
+      {/*      <Link href={instagramUrl} target="_blank" rel="noopener noreferrer">*/}
+      {/*        View on Instagram*/}
+      {/*      </Link>*/}
+      {/*    </Button>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
     </>
   );
 }

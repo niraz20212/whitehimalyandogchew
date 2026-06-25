@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  ["9+", "Years of Experience", "#0697c7"],
-  ["7+", "Global Distributors", "#ffb33d"],
-  ["35+", "Farmers", "#5dbb43"],
-  ["70+", "Employees", "#64bc46"],
+  ["30+", "Years of Experience", "#0697c7"],
+  ["4+", "Global Distributors", "#ffb33d"],
+  ["8000+", "Farmers", "#5dbb43"],
+  ["30+", "Employees", "#64bc46"],
 ];
 
 export default function AboutPage() {
@@ -36,14 +36,14 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="relative min-h-[360px] overflow-hidden rounded-xl bg-[#f1dfbd] shadow-[0_18px_50px_rgba(40,33,25,0.12)]">
+          <div className="relative aspect-[9/16] w-full overflow-hidden rounded-xl bg-[#f1dfbd] shadow-[0_18px_50px_rgba(40,33,25,0.12)]">
             <Image
-              src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1000&q=85"
-              alt="Rows of Himalayan yak chews"
-              fill
-              priority
-              sizes="(min-width:1024px) 45vw, 100vw"
-              className="object-cover"
+                src="/churpi.jpg"
+                alt="Rows of Himalayan yak chews"
+                fill
+                priority
+                sizes="(min-width:1024px) 45vw, 100vw"
+                className="object-cover object-top"
             />
           </div>
         </div>

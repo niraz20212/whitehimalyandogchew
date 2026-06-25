@@ -40,27 +40,27 @@ export default function ContactPage() {
             <div className="mt-5 grid gap-4 text-sm text-muted-foreground">
               <p className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
-                hello@whitehimalayandogchew.com
+               whitehimalayandogchew.com
               </p>
               <p className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary" />
-                +1 (555) 123-4567
+                +977 9826152030
               </p>
               <p className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-primary" />
-                214 Alpine Market Street, Denver, CO
+                Birtamode-5,Jhapa,Nepal
               </p>
             </div>
           </div>
-          <div className="overflow-hidden rounded-lg border border-border bg-card">
-            <iframe
-              title="Google map showing Denver, Colorado"
-              src="https://www.google.com/maps?q=Denver%20Colorado&output=embed"
-              className="h-72 w-full"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
+          {/*<div className="overflow-hidden rounded-lg border border-border bg-card">*/}
+          {/*  <iframe*/}
+          {/*    title="Google map showing Denver, Colorado"*/}
+          {/*    src="https://www.google.com/maps?q=Denver%20Colorado&output=embed"*/}
+          {/*    className="h-72 w-full"*/}
+          {/*    loading="lazy"*/}
+          {/*    referrerPolicy="no-referrer-when-downgrade"*/}
+          {/*  />*/}
+          {/*</div>*/}
         </div>
       </div>
     </section>

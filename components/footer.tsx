@@ -13,13 +13,13 @@ export function Footer() {
           <p className="font-black">Contact</p>
           <div className="mt-4 grid gap-2 text-white/90">
             <p className="flex items-center gap-2">
-              <MapPin className="h-3 w-3 text-primary" /> Budhanilkantha-8, Kathmandu, Nepal
+              <MapPin className="h-3 w-3 text-primary" /> Birtamode-5,Jhapa,Nepal
             </p>
             <p className="flex items-center gap-2">
-              <Phone className="h-3 w-3 text-primary" /> +977 9801230000
+              <Phone className="h-3 w-3 text-primary" /> +977 9826152030
             </p>
             <p className="flex items-center gap-2">
-              <Mail className="h-3 w-3 text-primary" /> info@whitehimalayandogchew.com
+              <Mail className="h-3 w-3 text-primary" /> whitehimalayan4@gmail.com
             </p>
           </div>
         </div>
@@ -33,9 +33,10 @@ export function Footer() {
           </div>
         </div>
         <div>
-          <p className="font-black">Mountain Pet Company</p>
+          <p className="font-black">White Himalayan Dog Chew Pvt. Ltd</p>
           <p className="mt-4 max-w-xs leading-6 text-white/90">
-            Premium Himalayan dog chews using centuries-old traditions and modern quality standards. We deliver natural, long-lasting nutrition that keeps tails wagging.
+            Authentic Himalayan Dog Chew,Direct from the source. From the Himalayan to Happy Dogs WorldWide. Nutritious, Long-
+            Lasting, and Naturally Delicious
           </p>
           <div className="mt-5 flex gap-3">
             <Link
