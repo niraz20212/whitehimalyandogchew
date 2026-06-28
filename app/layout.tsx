@@ -5,6 +5,7 @@ import { Navbar } from "@/components/navbar";
 import { Providers } from "@/components/providers";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 import { site } from "@/lib/data";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description: site.description,
+
   keywords: ["Himalayan dog chew", "yak chew", "natural dog treats", "grain free dog chew", "premium dog wellness"],
   openGraph: {
     title: `${site.name} | Premium Himalayan Yak Chews`,
@@ -20,6 +22,9 @@ export const metadata: Metadata = {
     url: site.url,
     siteName: site.name,
     type: "website",
+  },
+  icons : {
+    icon: "/logo.svg",
   },
 };
 
