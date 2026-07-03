@@ -17,12 +17,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const product = products.find((item) => item.slug === slug);
   if (!product) return {};
+  const description = `${product.description} A White Himalayan yak milk dog chew from Nepal for natural, long lasting chewing.`;
   return {
-    title: product.name,
-    description: product.description,
+    title: `White Himalayan ${product.name} Churpi Dog Chew`,
+    description,
     openGraph: {
-      title: `${product.name} | ${site.name}`,
-      description: product.description,
+      title: `White Himalayan ${product.name} Churpi Dog Chew | ${site.name}`,
+      description,
+      images: [
+        {
+          url: product.image,
+          alt: `White Himalayan ${product.name} yak milk churpi dog chew`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `White Himalayan ${product.name} Churpi Dog Chew`,
+      description,
       images: [product.image],
     },
   };
@@ -32,6 +44,20 @@ export default async function ProductDetailPage({ params }: Props) {
   const { slug } = await params;
   const product = products.find((item) => item.slug === slug);
   if (!product) notFound();
+  const productDescription = `${product.description} A White Himalayan yak milk dog chew from Nepal for natural, long lasting chewing.`;
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: `White Himalayan ${product.name} Churpi Dog Chew`,
+    description: productDescription,
+    image: `${site.url}${product.image}`,
+    brand: {
+      "@type": "Brand",
+      name: site.name,
+    },
+    category: "Dog Chew",
+    sku: product.slug,
+  };
   const highlights = [
     { text: "Naturally high protein and grain free", icon: CheckCircle2 },
     { text: "Low lactose through traditional aging", icon: ShieldCheck },
@@ -40,10 +66,15 @@ export default async function ProductDetailPage({ params }: Props) {
 
   return (
     <section className="container grid gap-10 py-14 sm:py-20 lg:grid-cols-2 lg:items-start">
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       <div className="overflow-hidden rounded-lg border border-border bg-card shadow-soft">
         <Image
           src={product.image}
-          alt={product.name}
+          alt={`White Himalayan ${product.name} yak milk churpi dog chew`}
           width={1000}
           height={800}
           priority
@@ -52,9 +83,9 @@ export default async function ProductDetailPage({ params }: Props) {
       </div>
       <div>
         <Badge>{product.category}</Badge>
-        <h1 className="mt-5 text-4xl font-semibold tracking-normal">{product.name}</h1>
+        <h1 className="mt-5 text-4xl font-semibold tracking-normal">{`White Himalayan Churpi Dog Chew - ${product.name}`}</h1>
         <p className="mt-3 text-lg text-muted-foreground">{product.size}</p>
-        <p className="mt-6 text-lg leading-8 text-muted-foreground">{product.description}</p>
+        <p className="mt-6 text-lg leading-8 text-muted-foreground">{productDescription}</p>
         <div className="mt-8 grid gap-3">
           {highlights.map(({ text, icon: Icon }) => (
             <div key={text} className="flex items-center gap-3 rounded-lg border border-border bg-card p-4">

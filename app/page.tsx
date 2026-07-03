@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Award, Dumbbell, HandHeart, Leaf, Play, Tags, WheatOff } from "lucide-react";
@@ -21,6 +22,12 @@ const galleryImages = [
   "https://images.unsplash.com/photo-1581092335397-9fa3411086d4?auto=format&fit=crop&w=900&q=80",
   "https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=900&q=80",
 ];
+
+export const metadata: Metadata = {
+  title: "White Himalayan Churpi Yak Milk Dog Chew",
+  description:
+    "Discover White Himalayan churpi, a premium Himalayan yak chew from Nepal for natural, long lasting dog chewing.",
+};
 
 const apart = [
   {
@@ -79,7 +86,7 @@ export default function HomePage() {
           <MotionReveal>
             <div>
               <h1 className="max-w-[420px] text-[26px] font-black leading-[1.18] tracking-normal text-[#242424] sm:text-[34px]">
-                Authentic Yak Chew Manufacturer and Global Wholesale Supplier from the Himalayas
+                White Himalayan Dog Chew - Premium Himalayan Yak Chew from Nepal
               </h1>
               <p className="mt-7 max-w-[430px] text-[22px] leading-9 text-[#2f2f2f]">
                 Crafted in the heart of the Himalayas, White Himalayan Dog Chews are made from yak and cow milk using generations of expertise, creating a 100% natural, protein-rich, and long-lasting chew trusted by pet owners and loved by dogs worldwide.
@@ -100,7 +107,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 overflow-hidden rounded-xl border-2 md:border-4 lg:border-8 border-white/20">
                   <Image
                       src={heroImage}
-                      alt="Dog enjoying a Himalayan chew"
+                      alt="White Himalayan yak milk churpi dog chew"
                       fill
                       className="object-cover object-center"
                   />
@@ -128,7 +135,7 @@ export default function HomePage() {
           <MotionReveal>
             <Image
                 src={storyImage}
-                alt="Small dog being offered a natural chew"
+                alt="Small dog being offered a White Himalayan natural dog chew"
                 width={800}
                 height={600}
                 className="w-full h-auto rounded-2xl"
@@ -158,6 +165,29 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="container max-w-5xl py-16">
+        <div className="grid gap-10 lg:grid-cols-3">
+          <div>
+            <h2 className="text-2xl font-black leading-tight text-[#202124]">What is Churpi?</h2>
+            <p className="mt-4 text-base leading-8 text-[#555]">
+              Churpi is a traditional Himalayan hard cheese made from yak and cow milk. White Himalayan churpi dog chews bring that Nepalese heritage into a natural dog chew that is slowly dried for durability, flavor, and a satisfying chew time.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-black leading-tight text-[#202124]">Why Choose Yak Milk Chews?</h2>
+            <p className="mt-4 text-base leading-8 text-[#555]">
+              A yak milk dog chew is naturally protein-rich and made with simple ingredients. As Himalayan dog chew suppliers from Nepal, we craft premium Himalayan yak chew products for pet brands, wholesalers, and dogs that enjoy a clean, long lasting chew.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-black leading-tight text-[#202124]">Benefits for Your Dog</h2>
+            <p className="mt-4 text-base leading-8 text-[#555]">
+              These natural dog chews help keep dogs engaged while supporting everyday chewing instincts. Each White Himalayan dog chew is firm, wholesome, and made for supervised chewing sessions dogs can enjoy.
+            </p>
+          </div>
+        </div>
+      </section>
+
 
 
       <section className="py-20">
@@ -168,7 +198,7 @@ export default function HomePage() {
           <div className="w-full max-w-5xl overflow-hidden rounded-2xl">
             <Image
                 src={setApartBelowImages}
-                alt="What sets us apart"
+                alt="White Himalayan natural yak milk dog chews from Nepal"
                 width={1200}
                 height={500}
                 className="h-auto w-full object-contain"

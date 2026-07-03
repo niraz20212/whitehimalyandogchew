@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Our Story",
-  description: "Learn about White Himalayan Dog Chew, our mission, farmer partnerships, and sustainability values.",
+  title: "About White Himalayan Churpi",
+  description:
+    "Learn how White Himalayan Dog Chew makes natural churpi and yak milk dog chews in Nepal with traditional methods.",
 };
 
 const stats = [
@@ -23,7 +24,7 @@ export default function AboutPage() {
               Our Story
             </p>
             <h1 className="mt-4 text-4xl font-black leading-tight text-[#202124] sm:text-5xl">
-              Handmade & Organic Himalayan Chews
+              White Himalayan Churpi - Natural Dog Chews from Nepal
             </h1>
             <div className="mt-7 space-y-5 text-base leading-8 text-[#303030]">
               <p className="text-2xl leading-9">
@@ -35,7 +36,7 @@ export default function AboutPage() {
               </p>
 
               <p className="text-2xl leading-9">
-                Each chew represents the rich culture of the Himalayas, the dedication of local farmers and dairy communities, and our commitment to sustainable craftsmanship. Driven by a vision to share Nepal's finest natural dog chew with pet owners worldwide, we continue to deliver a product that dogs love and owners trust, built on authenticity, tradition, and uncompromising quality.
+                Each chew represents the rich culture of the Himalayas, the dedication of local farmers and dairy communities, and our commitment to sustainable craftsmanship. As Himalayan dog chew suppliers from Nepal, we continue to share Nepal's finest natural dog chew with pet owners, wholesalers, and private label partners worldwide.
               </p>
 
             </div>
@@ -45,7 +46,7 @@ export default function AboutPage() {
             <div className="relative aspect-[9/16] w-full overflow-hidden rounded-xl bg-white shadow-[0_18px_50px_rgba(40,33,25,0.12)]">
               <Image
                   src="/churpi.png"
-                  alt="Rows of Himalayan yak chews"
+                  alt="Rows of White Himalayan churpi yak milk dog chews"
                   fill
                   className="object-cover object-center mix-blend-multiply"
               />
