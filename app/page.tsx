@@ -190,7 +190,7 @@ export default function HomePage() {
             </article>
 
             <article className="rounded-xl border border-[#eadfd3] bg-white p-7 shadow-[0_14px_40px_rgba(40,33,25,0.07)]">
-              <h2 className="text-2xl font-black leading-tight text-[#202124]">Why Choose Yak Milk Chews?</h2>
+              <h2 className="text-2xl font-black leading-tight text-[#202124]">Why choose yak cheese dog chews?</h2>
               <p className="mt-4 text-base leading-8 text-[#555]">
                 A yak cheese dog chew is naturally protein-rich and made with simple ingredients. Being Himalayan dog chew supplier from Nepal, we craft premium Himalayan yak chews for pet brands, wholesalers, and dogs that enjoy a clean, long lasting chew.
                 </p>
