@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "About White Himalayan Churpi",
   description:
-    "Learn how White Himalayan Dog Chew makes natural churpi and yak milk dog chews in Nepal with traditional methods.",
+    "Learn why White Himalayan Dog Chew is a trusted chew supplier in Nepal for natural churpi and yak milk dog chews.",
 };
 
 const stats = [
@@ -32,11 +32,11 @@ export default function AboutPage() {
               </p>
 
               <p className="text-2xl leading-9">
-                With our own production centers and modern processing facility in Jhapa, Nepal, we proudly bring authentic, manufacturer-direct Himalayan dog chews to the global market. Every step of production is carefully controlled from sourcing fresh, high-quality yak and cow milk from local dairy communities to shaping each chew using time-honored techniques combined with strict hygiene standards.
+                With our own production centers and modern processing facility in Jhapa, Nepal, we proudly bring authentic, manufacturer-direct Himalayan dog chews to the global market. Every step of production is carefully controlled from sourcing fresh, high-quality yak and cow milk from local dairy communities to shaping each chew using time-honored techniques combined with strict hygiene standards, helping us serve as a best chew supplier in Nepal for quality-focused buyers.
               </p>
 
               <p className="text-2xl leading-9">
-                Each chew represents the rich culture of the Himalayas, the dedication of local farmers and dairy communities, and our commitment to sustainable craftsmanship. As Himalayan dog chew suppliers from Nepal, we continue to share Nepal's finest natural dog chew with pet owners, wholesalers, and private label partners worldwide.
+                Each chew represents the rich culture of the Himalayas, the dedication of local farmers and dairy communities, and our commitment to sustainable craftsmanship. As Himalayan dog chew suppliers from Nepal, we continue to share Nepal's finest natural dog chew with pet owners, wholesalers, and private label partners worldwide as one of the top suppliers of dog chew.
               </p>
 
             </div>

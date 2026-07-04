@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description:
-    "Shop White Himalayan dog chew products from Nepal: premium Himalayan yak chew and churpi dog chews for natural, long lasting chewing.",
+    "Shop White Himalayan dog chew from Nepal: churpi, premium Himalayan yak chew, and natural long lasting dog chews from a trusted supplier.",
 
   keywords: [
     "White Himalayan",
@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     "himalayan yak chew",
     "Himalayan dog chew suppliers from Nepal",
     "premium Himalayan yak chew from Nepal",
+    "best chew supplier",
+    "best chew supplier in Nepal",
+    "best dog chew",
+    "top supplier of dog chew",
+    "supplier of dog chew",
     "natural dog chew",
     "long lasting dog chew",
   ],
@@ -35,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "White Himalayan Churpi Yak Milk Dog Chew",
     description:
-      "Shop White Himalayan churpi dog chews from Nepal, made as natural yak milk dog chew treats for long lasting chewing.",
+      "Shop White Himalayan churpi dog chews from Nepal from a trusted dog chew supplier of premium yak milk chews.",
     url: site.url,
     siteName: site.name,
     images: [
@@ -52,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "White Himalayan Churpi Yak Milk Dog Chew",
     description:
-      "Discover White Himalayan dog chew products: churpi and premium Himalayan yak chew from Nepal.",
+      "Discover White Himalayan dog chew products from Nepal: churpi, premium yak chew, and natural dog chews.",
     images: ["/hero-image.jpg"],
   },
   icons : {

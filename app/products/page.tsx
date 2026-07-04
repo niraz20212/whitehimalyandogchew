@@ -4,7 +4,7 @@ import { ProductFilter } from "@/components/product-filter";
 export const metadata: Metadata = {
     title: "Churpi Dog Chews",
     description:
-        "Shop White Himalayan dog chew products, including premium Himalayan yak chew from Nepal and natural churpi dog chews.",
+        "Shop White Himalayan dog chew products from a Nepal supplier, including premium Himalayan yak chew, natural churpi, and best dog chew options.",
 };
 
 export default function ProductsPage() {
@@ -17,7 +17,7 @@ export default function ProductsPage() {
             </div>
 
             <p className="mt-2 text-center text-sm text-muted-foreground">
-                Himalayan yak chew churpi and cheese puff from Nepal
+                Himalayan yak chew churpi and cheese puff from one of the top suppliers of dog chew in Nepal
             </p>
 
             <div className="mt-7">

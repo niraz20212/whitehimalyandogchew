@@ -26,7 +26,7 @@ const galleryImages = [
 export const metadata: Metadata = {
   title: "White Himalayan Churpi Yak Milk Dog Chew",
   description:
-    "Discover White Himalayan churpi, a premium Himalayan yak chew from Nepal for natural, long lasting dog chewing.",
+    "Discover White Himalayan churpi, a premium Himalayan yak chew from Nepal from a trusted dog chew supplier.",
 };
 
 const apart = [
@@ -89,7 +89,7 @@ export default function HomePage() {
                 White Himalayan Dog Chew - Premium Himalayan Yak Chew from Nepal
               </h1>
               <p className="mt-7 max-w-[430px] text-[22px] leading-9 text-[#2f2f2f]">
-                Crafted in the heart of the Himalayas, White Himalayan Dog Chews are made from yak and cow milk using generations of expertise, creating a 100% natural, protein-rich, and long-lasting chew trusted by pet owners and loved by dogs worldwide.
+                Crafted in the heart of the Himalayas, White Himalayan Dog Chews are made from yak and cow milk using generations of expertise, creating a 100% natural, protein-rich, and long-lasting chew trusted by pet owners, wholesalers, and partners looking for one of the top suppliers of dog chew from Nepal.
               </p>
             </div>
           </MotionReveal>
@@ -156,7 +156,9 @@ export default function HomePage() {
               carefully crafted and slowly dried to ensure long-lasting enjoyment.
               Rooted in Himalayan heritage, our product reflects authenticity,
               purity, and craftsmanship in every piece. Loved by dogs worldwide, it
-              is a healthy and satisfying natural treat.
+              is a healthy and satisfying natural treat. We aim to be the best chew
+              supplier in Nepal for brands seeking premium quality and authentic
+              Himalayan sourcing.
             </p>
             <Button asChild className="mt-8 rounded-full px-9 text-lg">
               <Link href="/about">Read More</Link>
@@ -165,25 +167,41 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="container max-w-5xl py-16">
-        <div className="grid gap-10 lg:grid-cols-3">
-          <div>
-            <h2 className="text-2xl font-black leading-tight text-[#202124]">What is Churpi?</h2>
-            <p className="mt-4 text-base leading-8 text-[#555]">
-              Churpi is a traditional Himalayan hard cheese made from yak and cow milk. White Himalayan churpi dog chews bring that Nepalese heritage into a natural dog chew that is slowly dried for durability, flavor, and a satisfying chew time.
+      <section className="bg-[#fbf8f5] py-16 sm:py-20">
+        <div className="container max-w-6xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-black uppercase tracking-[0.24em] text-primary">
+              Traditional Himalayan Churpi
+            </p>
+            <h2 className="mt-4 text-4xl font-black leading-tight text-[#202124] sm:text-5xl">
+              Natural Yak Milk Dog Chews from Nepal
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-[#555]">
+              White Himalayan dog chew products are made for pet owners, wholesalers, and private label partners looking for authentic churpi dog chews from a reliable supplier of dog chew in Nepal.
             </p>
           </div>
-          <div>
-            <h2 className="text-2xl font-black leading-tight text-[#202124]">Why Choose Yak Milk Chews?</h2>
-            <p className="mt-4 text-base leading-8 text-[#555]">
-              A yak milk dog chew is naturally protein-rich and made with simple ingredients. As Himalayan dog chew suppliers from Nepal, we craft premium Himalayan yak chew products for pet brands, wholesalers, and dogs that enjoy a clean, long lasting chew.
-            </p>
-          </div>
-          <div>
-            <h2 className="text-2xl font-black leading-tight text-[#202124]">Benefits for Your Dog</h2>
-            <p className="mt-4 text-base leading-8 text-[#555]">
-              These natural dog chews help keep dogs engaged while supporting everyday chewing instincts. Each White Himalayan dog chew is firm, wholesome, and made for supervised chewing sessions dogs can enjoy.
-            </p>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            <article className="rounded-xl border border-[#eadfd3] bg-white p-7 shadow-[0_14px_40px_rgba(40,33,25,0.07)]">
+              <h2 className="text-2xl font-black leading-tight text-[#202124]">What is Churpi?</h2>
+              <p className="mt-4 text-base leading-8 text-[#555]">
+                Churpi is a traditional Himalayan hard cheese made from yak and cow milk. White Himalayan churpi dog chews bring that Nepalese heritage into a natural dog chew that is slowly dried for durability, flavor, and a satisfying chew time.
+              </p>
+            </article>
+
+            <article className="rounded-xl border border-[#eadfd3] bg-white p-7 shadow-[0_14px_40px_rgba(40,33,25,0.07)]">
+              <h2 className="text-2xl font-black leading-tight text-[#202124]">Why Choose Yak Milk Chews?</h2>
+              <p className="mt-4 text-base leading-8 text-[#555]">
+                A yak milk dog chew is naturally protein-rich and made with simple ingredients. As Himalayan dog chew suppliers from Nepal, we craft premium Himalayan yak chew products for pet brands, wholesalers, and dogs that enjoy a clean, long lasting chew.
+              </p>
+            </article>
+
+            <article className="rounded-xl border border-[#eadfd3] bg-white p-7 shadow-[0_14px_40px_rgba(40,33,25,0.07)]">
+              <h2 className="text-2xl font-black leading-tight text-[#202124]">Benefits for Your Dog</h2>
+              <p className="mt-4 text-base leading-8 text-[#555]">
+                These natural dog chews help keep dogs engaged while supporting everyday chewing instincts. Each White Himalayan dog chew is firm, wholesome, and made for supervised chewing sessions dogs can enjoy when they need a best dog chew choice made with simple ingredients.
+              </p>
+            </article>
           </div>
         </div>
       </section>
