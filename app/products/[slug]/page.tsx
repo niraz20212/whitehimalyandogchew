@@ -95,7 +95,7 @@ export default async function ProductDetailPage({ params }: Props) {
           ))}
         </div>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <Button size="lg">Add to Cart</Button>
+          {/*<Button size="lg">Add to Cart</Button>*/}
           <Button asChild size="lg" variant="outline">
             <Link href="/products">Back to Products</Link>
           </Button>

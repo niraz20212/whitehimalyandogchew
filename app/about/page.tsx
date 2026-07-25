@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  ["30+", "Years of Experience", "#0697c7"],
-  ["4+", "Global Distributors", "#ffb33d"],
-  ["8000+", "Farmers", "#5dbb43"],
+  ["18+", "Years of Experience", "#0697c7"],
+  ["3+", "Global Distributors", "#ffb33d"],
+  ["2600+", "Farmers", "#5dbb43"],
   ["30+", "Employees", "#64bc46"],
 ];
 
@@ -45,7 +45,7 @@ export default function AboutPage() {
           <div className="relative aspect-[9/16] w-full overflow-hidden rounded-xl bg-white shadow-[0_18px_50px_rgba(40,33,25,0.12)]">
             <div className="relative aspect-[9/16] w-full overflow-hidden rounded-xl bg-white shadow-[0_18px_50px_rgba(40,33,25,0.12)]">
               <Image
-                  src="/churpi.png"
+                  src="/churpi.jpeg"
                   alt="Rows of White Himalayan churpi yakcheese chews"
                   fill
                   className="object-cover object-center mix-blend-multiply"
