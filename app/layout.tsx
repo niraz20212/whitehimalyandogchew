@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "churpi",
     "churpi dog chew",
     "himalayan churpi",
-    "yakcheese chew",
+    "yak cheese chew",
     "himalayan yak chew",
     "Himalayan dog chew suppliers from Nepal",
     "premium Himalayan yak chew from Nepal",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     canonical: site.url,
   },
   openGraph: {
-    title: "White Himalayan Churpi Yakcheese Chew",
+    title: "White Himalayan Churpi Yak Cheese Chew",
     description:
       "Shop White Himalayan churpi dog chews from Nepal from a trusted dog chew supplier of premium yak milk chews.",
     url: site.url,
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "White Himalayan Churpi Yakcheese Chew",
+    title: "White Himalayan Churpi Yak Cheese Chew",
     description:
       "Discover White Himalayan dog chew products from Nepal: churpi, premium yak chew, and natural dog chews.",
     images: ["/hero-image.jpg"],

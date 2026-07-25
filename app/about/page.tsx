@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "About White Himalayan Churpi",
   description:
-    "Learn why White Himalayan Yak CheeseChew is a trusted chew supplier in Nepal for natural churpi and yakcheese chews.",
+    "Learn why White Himalayan Yak CheeseChew is a trusted chew supplier in Nepal for natural churpi and yak cheese chews.",
 };
 
 const stats = [
@@ -46,7 +46,7 @@ export default function AboutPage() {
             <div className="relative aspect-[9/16] w-full overflow-hidden rounded-xl bg-white shadow-[0_18px_50px_rgba(40,33,25,0.12)]">
               <Image
                   src="/churpi.jpeg"
-                  alt="Rows of White Himalayan churpi yakcheese chews"
+                  alt="Rows of White Himalayan churpi yak cheese chews"
                   fill
                   className="object-cover object-center mix-blend-multiply"
               />
