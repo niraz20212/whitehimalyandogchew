@@ -93,7 +93,7 @@ export const products = [
     slug: "yak-cheese-puff-dog-treat",
     name: "Yak Cheese Puff",
     category: "Churpi",
-    size: "35 g",
+    size: "",
     badge: "Churpi",
     image: cheeseImage,
     description: "A puffed churpi dog treat made from yak milk chew tradition for crunchy reward moments.",
