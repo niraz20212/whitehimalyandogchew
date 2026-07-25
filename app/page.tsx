@@ -42,7 +42,7 @@ const apart = [
   },
   {
     title: "High Protein",
-    text: "Naturally rich in protein to support strong muscles, healthy teeth, and overall well-being.",
+    text: "Minimum 60% natural protein to support strong muscles, healthy teeth, and overall well being",
     icon: Dumbbell,
   },
   {
