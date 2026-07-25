@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const product = products.find((item) => item.slug === slug);
   if (!product) return {};
-  const description = `${product.description} A White Himalayan yak milk dog chew from Nepal for natural, long lasting chewing.`;
+  const description = `${product.description} A White Himalayan yak cheese  chew from Nepal for natural, long lasting chewing.`;
   return {
     title: `White Himalayan ${product.name} Churpi Dog Chew`,
     description,
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [
         {
           url: product.image,
-          alt: `White Himalayan ${product.name} yak milk churpi dog chew`,
+          alt: `White Himalayan ${product.name} Yak Cheese Chew`,
         },
       ],
     },
@@ -44,7 +44,7 @@ export default async function ProductDetailPage({ params }: Props) {
   const { slug } = await params;
   const product = products.find((item) => item.slug === slug);
   if (!product) notFound();
-  const productDescription = `${product.description} A White Himalayan yak milk dog chew from Nepal for natural, long lasting chewing.`;
+  const productDescription = `${product.description} A White Himalayan cheese chew from Nepal for natural, long lasting chewing.`;
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",

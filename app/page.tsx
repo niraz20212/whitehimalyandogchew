@@ -24,7 +24,7 @@ const galleryImages = [
 ];
 
 export const metadata: Metadata = {
-  title: "White Himalayan Churpi Yak Milk Dog Chew",
+  title: "White Himalayan Churpi Yak Cheese Chew",
   description:
     "Discover White Himalayan churpi, a premium Himalayan yak chew from Nepal from a trusted dog chew supplier.",
 };
@@ -174,7 +174,7 @@ export default function HomePage() {
               Traditional Himalayan Churpi
             </p>
             <h2 className="mt-4 text-4xl font-black leading-tight text-[#202124] sm:text-5xl">
-              Natural Yak Milk Dog Chews from Nepal
+              Natural Yakcheese Chews from Nepal
             </h2>
             <p className="mt-5 text-lg leading-8 text-[#555]">
               White Himalayan dog chew products are made for pet owners, wholesalers, and private label partners looking for authentic churpi dog chews from a reliable supplier of dog chew in Nepal.
@@ -216,7 +216,7 @@ export default function HomePage() {
           <div className="w-full max-w-5xl overflow-hidden rounded-2xl">
             <Image
                 src={setApartBelowImages}
-                alt="White Himalayan natural yak milk dog chews from Nepal"
+                alt="White Himalayan natural yakcheese chews from Nepal"
                 width={1200}
                 height={500}
                 className="h-auto w-full object-contain"
