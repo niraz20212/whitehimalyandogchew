@@ -9,10 +9,7 @@ out/
 .npm-cache/
 .pnpm-store/
 
-# Environment files
-.env
-.env.*
-!.env.example
+
 
 # Logs
 npm-debug.log*
