@@ -52,7 +52,7 @@ const manufacturingSteps = [
   {
     step: "STEP 7",
     title: "Quality Inspection",
-    text: "Every batch is carefully inspected by our experienced quality control staff for quality, size, texture, and consistency. Strict quality and food-safety checks are maintained throughout the production process. Only chews that meet our established standards proceed to the next stage.",
+    text: "Every batch is carefully inspected by our experienced quality control staff for quality, size, and texture, and consistency. Strict quality and food-safety checks are maintained throughout the production process. Only chews that meet our established standards proceed to the next stage.",
     image: "/step7.PNG",
     imageClass: "md:max-w-md",
   },
@@ -63,6 +63,20 @@ const manufacturingSteps = [
     image: "/step8.PNG",
     imageClass: "",
   },
+] as const;
+
+const galleryPhotos = [
+  { src: "/step1.PNG", alt: "Step 1" },
+  { src: "/step11.PNG", alt: "Gallery 1" },
+  { src: "/step2.PNG", alt: "Step 2" },
+  { src: "/step12.PNG", alt: "Gallery 2" },
+  { src: "/step3.PNG", alt: "Step 3" },
+  { src: "/step4.PNG", alt: "Step 4" },
+  { src: "/step10.PNG", alt: "Gallery 3" },
+  { src: "/step5.PNG", alt: "Step 5" },
+  { src: "/step6.PNG", alt: "Step 6" },
+  { src: "/step7.PNG", alt: "Step 7" },
+  { src: "/step8.PNG", alt: "Step 8" },
 ] as const;
 
 export default function ProcessPage() {
@@ -108,6 +122,41 @@ export default function ProcessPage() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-40">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <p className="text-sm font-bold uppercase tracking-widest text-[#a87948] mb-4">Our Gallery</p>
+            <h2 className="text-4xl font-bold text-[#3f2a1a] sm:text-5xl">100% Natural, Handmade and Organic</h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {galleryPhotos.slice(0, 8).map((photo) => (
+              <div key={photo.src} className="relative aspect-square overflow-hidden rounded-2xl bg-gray-100 shadow-sm">
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  width={0}
+                  height={0}
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+            ))}
+          </div>
+          <div className="mt-4 flex flex-wrap justify-center gap-4">
+            {galleryPhotos.slice(8).map((photo) => (
+              <div key={photo.src} className="relative aspect-square w-[calc(50%-8px)] overflow-hidden rounded-2xl bg-gray-100 shadow-sm md:w-[calc(25%-12px)]">
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  width={0}
+                  height={0}
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
