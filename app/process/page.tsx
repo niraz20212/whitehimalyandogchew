@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BadgeCheck, Droplets, Flame, Leaf, Milk, PackageCheck, Scissors, ShieldCheck, SlidersHorizontal } from "lucide-react";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Process",
@@ -8,114 +8,106 @@ export const metadata: Metadata = {
 
 const manufacturingSteps = [
   {
-    title: "Milk Collection",
-    text: "Fresh yak and cow milk is sourced from local Himalayan farmers.",
-    icon: Milk,
+    step: "STEP 1",
+    title: "Fresh Yak and Cow Milk Collection",
+    text: "Our process begins with sourcing fresh yak and cow milk from local Himalayan farmers. We use fresh, wholesome, high SNF milk from grass-fed yaks and cows. This natural beginning helps preserve the authentic quality and character of our Himalayan cheese.",
+    image: "/step1.PNG",
+    imageClass: "",
   },
   {
+    step: "STEP 2",
     title: "Milk Processing",
-    text: "The milk is filtered, heated, and combined with a small amount of salt and lime.",
-    icon: Droplets,
+    text: "The fresh milk is naturally filtered using cheesecloth and gently heated to around 30-40° Celsius. Then it is passed through cream separator to remove cream. Then the filtered milk is carefully heated to approximately 85–90°C, creating the optimal conditions for the coagulation process that follows. Generations of expertise help us preserve the milk’s natural qualities.",
+    image: "/step2.PNG",
+    imageClass: "",
   },
   {
+    step: "STEP 3",
     title: "Curd Formation",
-    text: "The mixture is naturally coagulated to separate curds from whey.",
-    icon: Leaf,
+    text: "The milk is naturally coagulated using lime juice to form fresh curds. This traditional process separates the curds from the whey. The natural curds become the foundation of our Himalayan dog chews. No artificial additives or preservatives are used during the process.",
+    image: "/step3.PNG",
+    imageClass: "",
   },
   {
+    step: "STEP 4",
     title: "Pressing & Shaping",
-    text: "The curds are pressed between metallic plates to remove moisture and shaped into blocks.",
-    icon: SlidersHorizontal,
+    text: "Once the curds are prepared, they are carefully wrapped and placed under dense weights. The curds are gently compressed over several days, allowing moisture to leave gradually and naturally. This slow, time-honored process creates the firm, dense structure that makes our chews naturally long-lasting. Passed down through generations, this traditional craftsmanship remains an essential part of our Himalayan cheese-making heritage.",
+    image: "/step4.PNG",
+    imageClass: "",
   },
   {
-    title: "Cutting",
-    text: "The blocks are cut into various chew sizes and shapes as per order.",
-    icon: Scissors,
+    step: "STEP 5",
+    title: "Cutting and sizing",
+    text: "The pressed blocks are then unwrapped and kept in light natural smoke for 3-4 days and carefully cut into different sizes and shapes. Each piece is prepared according to the required chew size. The process preserves the natural texture and character of the yak cheese chew.",
+    image: "/step5.PNG",
+    imageClass: "",
   },
   {
+    step: "STEP 6",
     title: "Drying & Aging",
-    text: "The chews are traditionally smoke-dried to enhance durability, flavor, and shelf life.",
-    icon: Flame,
+    text: "The cheese chews are traditionally dried and naturally aged to gradually reduce moisture and develop their characteristic dense, firm texture. Our time-honored smoke-drying process adds a distinctive natural character while supporting the chew’s long-lasting quality. No artificial flavors, preservatives, or additives are used.",
+    image: "/step6.PNG",
+    imageClass: "",
   },
   {
+    step: "STEP 7",
     title: "Quality Inspection",
-    text: "Each batch undergoes strict quality and safety checks.",
-    icon: ShieldCheck,
+    text: "Every batch is carefully inspected by our experienced quality control staff for quality, size, texture, and consistency. Strict quality and food-safety checks are maintained throughout the production process. Only chews that meet our established standards proceed to the next stage.",
+    image: "/step7.PNG",
+    imageClass: "md:max-w-md",
   },
   {
-    title: "Cleaning and Packaging",
-    text: "Selected chew blocks are naturally cleaned with pure water, expertly sized, and securely packaged to ensure a premium-quality Himalayan dog chew that is safe, protein-rich, long-lasting, and made with only 3 natural ingredients.",
-    icon: PackageCheck,
+    step: "STEP 8",
+    title: "Cleaning & Packaging",
+    text: "The selected chews are naturally cleaned with pure water, dried (moisture ≤ 14%) and prepared for packaging. They are carefully sized, inspected, and securely packed. The result is a natural, protein-rich, long-lasting chew made with only 3 natural ingredients which is loved by dogs worldwide.",
+    image: "/step8.PNG",
+    imageClass: "",
   },
 ] as const;
 
 export default function ProcessPage() {
   return (
-    <section className="relative overflow-hidden bg-[#fff8ee] py-14 sm:py-20">
-      <div className="absolute inset-0 bone-bg opacity-[0.05]" aria-hidden="true" />
-      <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-[#f2dfc2]/60 blur-3xl" aria-hidden="true" />
-      <div className="absolute bottom-12 right-0 h-80 w-80 rounded-full bg-[#ead0aa]/50 blur-3xl" aria-hidden="true" />
-
-      <div className="container relative">
-        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#a87948]">Our Process</p>
-            <h1 className="mt-4 max-w-3xl text-4xl font-bold leading-tight tracking-normal text-[#3f2a1a] sm:text-5xl">
-              Himalayan Yak Chew Manufacturing Process
-            </h1>
-          </div>
-          <p className="max-w-2xl text-base leading-8 text-[#765d45]">
-            Fresh yak and cow milk is sourced from local Himalayan farmers and transformed into premium Himalayan yak chews for dogs using traditional methods.
+    <section className="bg-white py-16 sm:py-24">
+      <div className="container mx-auto px-4">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <p className="text-sm font-bold uppercase tracking-widest text-[#a87948] mb-4">Our Process</p>
+          <h1 className="text-4xl font-bold text-[#3f2a1a] sm:text-5xl mb-6">
+            The Crafting Process Behind Our Himalayan Yak Chews
+          </h1>
+          <p className="text-lg text-[#765d45] leading-relaxed">
+            At White Himalayan Dog Chew, we take pride in preserving time-honored Himalayan traditions to craft authentic, nutritious dog chews. Every stage of our process blends traditional craftsmanship with modern quality standards, ensuring a product that is both naturally authentic and carefully made for safety and quality.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-[280px_1fr] lg:gap-10">
-          <aside className="rounded-lg border border-[#ead9c1] bg-white/80 p-6 shadow-[0_20px_60px_rgba(96,64,35,0.1)] backdrop-blur">
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#9b6b3e] text-white">
-              <BadgeCheck className="h-6 w-6" aria-hidden="true" />
+        <div className="space-y-24">
+          {manufacturingSteps.map((step, index) => (
+            <div 
+              key={step.step} 
+              className={`flex flex-col gap-12 items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}
+            >
+              <div className={`w-full md:w-1/2 flex ${step.imageClass ? 'justify-center' : ''}`}>
+                <Image
+                  src={step.image}
+                  alt={step.title}
+                  width={0}
+                  height={0}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className={`h-auto w-full rounded-2xl bg-gray-100 shadow-lg ${step.imageClass}`}
+                />
+              </div>
+              <div className="w-full md:w-1/2 space-y-4">
+                <p className="text-sm font-bold uppercase tracking-widest text-[#a87948]">
+                  {step.step}
+                </p>
+                <h2 className="text-3xl font-bold text-[#3f2a1a] sm:text-4xl">
+                  {step.title}
+                </h2>
+                <p className="text-lg text-[#765d45] leading-relaxed">
+                  {step.text}
+                </p>
+              </div>
             </div>
-            <h2 className="mt-5 text-2xl font-semibold tracking-normal text-[#3f2a1a]">Made with care, not shortcuts.</h2>
-            <p className="mt-4 text-sm leading-7 text-[#765d45]">
-              Our process keeps the recipe simple and traditional: milk, salt, and lime, transformed through careful pressing, cutting, drying, inspection, and packaging.
-            </p>
-            <div className="mt-6 grid gap-3 text-sm font-semibold text-[#5b4029]">
-              <div className="rounded-lg bg-[#f8ead8] px-4 py-3">3 natural ingredients</div>
-              <div className="rounded-lg bg-[#f8ead8] px-4 py-3">Protein-rich texture</div>
-              <div className="rounded-lg bg-[#f8ead8] px-4 py-3">Long-lasting chew</div>
-            </div>
-          </aside>
-
-          <div className="relative">
-            <div className="absolute left-6 top-4 hidden h-[calc(100%-2rem)] w-px bg-gradient-to-b from-[#d6ad7a] via-[#ead0aa] to-transparent md:block" aria-hidden="true" />
-            <div className="grid gap-5">
-              {manufacturingSteps.map((step, index) => {
-                const Icon = step.icon;
-
-                return (
-                  <article
-                    key={step.title}
-                    className="relative rounded-lg border border-[#ead9c1] bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_45px_rgba(96,64,35,0.12)] md:ml-16"
-                  >
-                    <div className="absolute -left-16 top-5 hidden h-12 w-12 items-center justify-center rounded-lg border border-[#e6d2b6] bg-[#fff8ee] text-[#9b6b3e] shadow-sm md:flex">
-                      <Icon className="h-5 w-5" aria-hidden="true" />
-                    </div>
-                    <div className="flex gap-4">
-                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-[#f3e0c5] text-[#8d5f34] md:hidden">
-                        <Icon className="h-5 w-5" aria-hidden="true" />
-                      </div>
-                      <div>
-                        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#b08359]">
-                          Step {String(index + 1).padStart(2, "0")}
-                        </p>
-                        <h3 className="mt-2 text-xl font-semibold tracking-normal text-[#3f2a1a]">{step.title}</h3>
-                        <p className="mt-3 text-sm leading-7 text-[#765d45]">{step.text}</p>
-                      </div>
-                    </div>
-                  </article>
-                );
-              })}
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
