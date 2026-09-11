@@ -6,6 +6,7 @@ import { MotionReveal } from "@/components/motion-reveal";
 import { OrganicImage } from "@/components/organic-image";
 import { SectionHeading } from "@/components/section-heading";
 import { Button } from "@/components/ui/button";
+import { HeroImageTransition } from "@/components/hero-image-transition";
 import { site } from "@/lib/data";
 import { DollarSign } from "lucide-react";
 
@@ -90,7 +91,7 @@ export default function HomePage() {
                 <span className="block font-medium italic">Premium Yak Cheese Chews — Crafted in Nepal</span>
               </h1>
               <p className="mt-7 max-w-[430px] text-[22px] leading-9 text-[#2f2f2f]">
-                Crafted in the heart of the Himalayas, White Himalayan Dog Chews are made from yak and cow milk using generations of expertise, creating a 100% natural, protein-rich, and long-lasting chew trusted by pet owners, wholesalers, and partners looking for one of the top suppliers of dog chew from Nepal.
+                Crafted in the heart of the Himalayas, White Himalayan Dog Chews are made from yak and cow milk using generations of expertise creating a 100% natural, protein-rich, and long-lasting chew trusted by pet owners, wholesalers, distributors, retail stores, and partners around the world.
               </p>
             </div>
           </MotionReveal>
@@ -103,17 +104,16 @@ export default function HomePage() {
               <span className="absolute bottom-4 right-20 h-16 w-24 rotate-12 rounded-full bg-[#ffbd3e]" />
               {/*<span className="absolute bottom-0 left-48 h-36 w-72 -rotate-12 rounded-[50%] bg-[#0793a7]" />*/}
 
-              {/* IMAGE FRAME */}
-              <div className="relative w-full aspect-[3/4] max-h-[420px] md:max-h-[585px]">
-                <div className="absolute inset-0 overflow-hidden rounded-xl border-2 md:border-4 lg:border-8 border-white/20">
-                  <Image
-                      src={heroImage}
-                      alt="White Himalayan yak milk churpi dog chew"
-                      fill
-                      className="object-cover object-center"
-                  />
-                </div>
-              </div>
+               {/* IMAGE FRAME */}
+               <div className="relative w-full aspect-[3/4] max-h-[420px] md:max-h-[585px]">
+                 <div className="absolute inset-0 overflow-hidden rounded-xl border-2 md:border-4 lg:border-8 border-white/20">
+                   <HeroImageTransition 
+                     firstImage="/homeimage1.PNG" 
+                     secondImage={heroImage} 
+                     alt="White Himalayan yak milk churpi dog chew" 
+                   />
+                 </div>
+               </div>
 
             </div>
           </MotionReveal>
