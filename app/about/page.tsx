@@ -23,9 +23,9 @@ export default function AboutPage() {
             <p className="text-3xl font-black uppercase tracking-[0.3em] text-primary">
               Our Story
             </p>
-            <h1 className="mt-4 text-4xl font-black leading-tight text-[#202124] sm:text-5xl">
-              The Craft Behind Our Himalayan Yak Chews
-            </h1>
+              <h1 className="mt-4 text-3xl font-black leading-tight text-[#202124] sm:text-4xl">
+                The Craft Behind Our Himalayan Yak Chews
+              </h1>
             <div className="mt-7 space-y-5 text-base leading-8 text-[#303030]">
               <p className="text-2xl leading-9">
                 Three decades of tradition. More than a decade of experience. Now, a journey to the world.

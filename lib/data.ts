@@ -178,8 +178,10 @@ export const faqs = [
     a: "They are traditionally made from yak and cow milk, lime juice, and a small amount of salt, then pressed and aged into a hard natural chew.",
   },
   {
-    q: "Are these chews safe for puppies?",
-    a: "They are best for supervised chewing and dogs with adult teeth. For puppies, choose the right size and ask your veterinarian if your dog has dental concerns.",
+    q: "Are these chews good for dogs?",
+    a: "Himalayan cheese chews provide natural protein while satisfying dogs’ instinct to chew and supporting mental stimulation.\n" +
+        "\n" +
+        "Our dense chews are designed for slow chewing and licking. Always supervise your dog and choose the appropriate chew size and density for their chewing style.",
   },
   {
     q: "How do I choose a size?",
@@ -187,7 +189,7 @@ export const faqs = [
   },
   {
     q: "What should I do with the small leftover end?",
-    a: "Remove it before it becomes a choking risk. Many pet parents soak the end and microwave it briefly to create a crunchy puff treat.",
+    a: "Remove the small leftover piece, soak it in warm water for 5 minutes, then microwave for 45 seconds and watch it puff up. Let it cool for 2 minutes before treating your dog to a crunchy, homemade puff.",
   },
   {
     q: "Are they lactose free?",
@@ -196,5 +198,9 @@ export const faqs = [
   {
     q: "Do you work directly with farmers?",
     a: "Yes. The brand model centers small-batch sourcing, fair pricing, and long-term relationships with Himalayan farming communities.",
+  },
+  {
+    q: "Are your Himalayan Dog Chews 100% natural?",
+    a: "Yes. Our Himalayan Dog Chews are made with natural yak and cow milk, salt, and lime, with no artificial preservatives, flavors, or additives.",
   },
 ];
