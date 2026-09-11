@@ -86,7 +86,8 @@ export default function HomePage() {
           <MotionReveal>
             <div>
               <h1 className="max-w-[420px] text-[26px] font-black leading-[1.18] tracking-normal text-[#242424] sm:text-[34px]">
-                White Himalayan Dog Chew - Premium Himalayan Yak Chew from Nepal
+                <span className="block font-black">The Real Manufacturer</span>
+                <span className="block font-medium italic">Premium Yak Cheese Chews — Crafted in Nepal</span>
               </h1>
               <p className="mt-7 max-w-[430px] text-[22px] leading-9 text-[#2f2f2f]">
                 Crafted in the heart of the Himalayas, White Himalayan Dog Chews are made from yak and cow milk using generations of expertise, creating a 100% natural, protein-rich, and long-lasting chew trusted by pet owners, wholesalers, and partners looking for one of the top suppliers of dog chew from Nepal.
