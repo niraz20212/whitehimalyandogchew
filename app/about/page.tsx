@@ -24,21 +24,28 @@ export default function AboutPage() {
               Our Story
             </p>
             <h1 className="mt-4 text-4xl font-black leading-tight text-[#202124] sm:text-5xl">
-              White Himalayan Churpi - Natural Dog Chews from Nepal
+              The Craft Behind Our Himalayan Yak Chews
             </h1>
             <div className="mt-7 space-y-5 text-base leading-8 text-[#303030]">
               <p className="text-2xl leading-9">
-                White Himalayan Dog Chew was born from over 32 years of expertise in crafting traditional Himalayan chhurpi in Ilam, Nepal. Rooted in generations of dairy craftsmanship, our journey began with a deep respect for natural methods and the cultural heritage of the Himalayas. Over time, this traditional knowledge evolved into a vision to create premium, natural dog chews that reflect authenticity, purity, and quality.
+                Three decades of tradition. More than a decade of experience. Now, a journey to the world.
               </p>
 
               <p className="text-2xl leading-9">
-                With our own production centers and modern processing facility in Jhapa, Nepal, we proudly bring authentic, manufacturer-direct Himalayan dog chews to the global market. Every step of production is carefully controlled from sourcing fresh, high-quality yak and cow milk from local dairy communities to shaping each chew using time-honored techniques combined with strict hygiene standards, helping us serve as a best chew supplier in Nepal for quality-focused buyers.
+                Our journey began in 1996 in Ilam, Nepal, with the traditional craft of making Chhurpi for human consumption.
               </p>
 
               <p className="text-2xl leading-9">
-                Each chew represents the rich culture of the Himalayas, the dedication of local farmers and dairy communities, and our commitment to sustainable craftsmanship. As Himalayan dog chew suppliers from Nepal, we continue to share Nepal's finest natural dog chew with pet owners, wholesalers, and private label partners worldwide as one of the top suppliers of dog chew.
+                16 years later, in 2012, we expanded our expertise into the world of pet chews, manufacturing and sourcing Himalayan dog chew Chhurpi for exporters. Over the years, this experience has helped us develop a strong understanding of quality, size, consistency, production, and international market requirements.
               </p>
 
+              <p className="text-2xl leading-9">
+                Today, in 2026, we are taking the next step by bringing our own Himalayan dog chews directly to the world.
+              </p>
+
+              <p className="text-2xl leading-9">
+                From traditional Chhurpi made in the hills of Ilam to crafting premium Himalayan dog chews reaching global markets, our journey has come a long way, and we believe this is just the beginning.
+              </p>
             </div>
           </div>
 
