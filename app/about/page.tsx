@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  ["18+", "Years of Experience", "#0697c7"],
+  ["14+", "Years of Experience", "#0697c7"],
   ["3+", "Global Distributors", "#ffb33d"],
   ["26000+", "Farmers", "#5dbb43"],
   ["30+", "Employees", "#64bc46"],
